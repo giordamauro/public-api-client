@@ -1,7 +1,6 @@
 package com.util;
 
 import com.apigee.ApigeeAPI;
-import com.apigee.PublicApiPaths;
 import com.http.impl.httpclient.BasicAuthHttpFactory;
 import com.http.model.HttpFactory;
 import com.http.proxy.ApiMetadataHandler;
@@ -11,8 +10,11 @@ import com.http.proxy.ApiResultHandler;
 import com.http.proxy.impl.ApiMetadataHandlerImpl;
 import com.http.proxy.impl.ApiMethodHandlerImpl;
 import com.http.proxy.impl.ApiResultHandlerImpl;
+import com.http.tests.PublicApiPaths;
 
 public final class ApiGeeUtil {
+
+	public static final String API_GEE_HOST = "https://api.enterprise.apigee.com";
 
 	public static final String BUNDLE_FORMAT = "bundle";
 
