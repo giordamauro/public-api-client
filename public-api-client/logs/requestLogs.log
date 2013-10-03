@@ -1,0 +1,24 @@
+2013-10-02 16:09:31,477 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
+2013-10-02 16:09:31,874 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/4/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 16:09:36,095 INFO - Response: 404, Headers: {Date=Wed, 02 Oct 2013 19:09:24 GMT, Content-Length=192, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-10-02 16:09:49,089 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
+2013-10-02 16:09:49,114 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/1/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 16:09:51,729 INFO - Response: 400, Headers: {Date=Wed, 02 Oct 2013 19:09:40 GMT, Content-Length=189, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-10-02 16:14:11,535 INFO - Invoking service method: 'ApigeeAPI.getApiRevisionDeployments(String, int)'
+2013-10-02 16:14:11,559 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/1/deployments" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 16:14:14,183 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 19:14:02 GMT, Content-Length=101, Connection=keep-alive, Content-Type=application/json}
+2013-10-02 17:24:40,019 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
+2013-10-02 17:24:40,044 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/1/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 17:24:42,767 INFO - Response: 400, Headers: {Date=Wed, 02 Oct 2013 20:24:31 GMT, Content-Length=189, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
+2013-10-02 18:14:46,992 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
+2013-10-02 18:14:47,019 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/agero-resource-product/revisions/6/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 18:14:50,006 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:14:38 GMT, Content-Length=1187, Connection=keep-alive, Content-Type=application/json}
+2013-10-02 18:15:13,332 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
+2013-10-02 18:15:13,356 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/agero-resource-product/revisions/6/deployments?action=deploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 18:15:19,849 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:15:08 GMT, Content-Length=1169, Connection=keep-alive, Content-Type=application/json}
+2013-10-02 18:20:20,610 INFO - Invoking service method: 'ApigeeAPI.getApiDeployments(String)'
+2013-10-02 18:20:20,632 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/deployments" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 18:20:22,546 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:20:11 GMT, Content-Length=81, Connection=keep-alive, Content-Type=application/json}
+2013-10-02 18:27:01,436 INFO - Invoking service method: 'ApigeeAPI.undeployApiProxyRevision(String, String, int)'
+2013-10-02 18:27:01,463 INFO - curl -k -v -X DELETE "https://api.enterprise.apigee.com/v1/organizations/mgiorda/environments/test/apis/agero-resource-product/revisions/6/deployments" -u mgiorda@apigee.com:1234321Nomejodas
+2013-10-02 18:27:04,172 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:26:52 GMT, Content-Length=1187, Connection=keep-alive, Content-Type=application/json}

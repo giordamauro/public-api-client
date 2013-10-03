@@ -5,7 +5,7 @@ import com.apigee.Dev;
 import com.apigee.Org;
 import com.util.ApiGeeUtil;
 
-public class GetApiRevisionDeployments {
+public class GetApiDeployments {
 
 	public static void main(String[] args) {
 
@@ -14,11 +14,10 @@ public class GetApiRevisionDeployments {
 		final String password = "1234321Nomejodas";
 
 		final String apiName = "wrapper-md5";
-		final int revision = 1;
 
 		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
 
-		String deployments = publicApi.getApiRevisionDeployments(apiName, revision);
+		String deployments = publicApi.getApiDeployments(apiName);
 
 		System.out.println(deployments);
 

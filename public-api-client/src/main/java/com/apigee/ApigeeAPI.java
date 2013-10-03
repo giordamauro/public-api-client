@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -80,6 +81,10 @@ public interface ApigeeAPI {
 	ApiProxy getApiProxyRevision(@PathParam("api") String api, @PathParam("revision") int revision);
 
 	@GET
+	@Path("/apis/{api}/deployments")
+	String getApiDeployments(@PathParam("api") String api);
+
+	@GET
 	@Path("/apis/{api}/revisions/{revision}/deployments")
 	String getApiRevisionDeployments(@PathParam("api") String api, @PathParam("revision") int revision);
 
@@ -107,5 +112,9 @@ public interface ApigeeAPI {
 	@Consumes(MediaType.APPLICATION_OCTET_STREAM)
 	@Produces(MediaType.APPLICATION_JSON)
 	String importApiProxy(@QueryParam("action") String action, @QueryParam("name") String proxyName, @FormParam("payload") InputStream proxyZip);
+
+	@DELETE
+	@Path("/environments/{environment}/apis/{api}/revisions/{revision}/deployments")
+	String undeployApiProxyRevision(@PathParam("environment") String environment, @PathParam("api") String api, @PathParam("revision") int revision);
 
 }
