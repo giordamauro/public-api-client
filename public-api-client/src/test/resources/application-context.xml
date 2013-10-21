@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.2.xsd
+						http://www.springframework.org/schema/util 
+						http://www.springframework.org/schema/util/spring-util-3.2.xsd
+						http://www.springframework.org/schema/tx
+						http://www.springframework.org/schema/tx/spring-tx.xsd
+						http://www.springframework.org/schema/jee 
+						http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+	<context:annotation-config />
+
+	<context:property-placeholder location="classpath:/execution.properties" />
+
+	<bean id="httpFactory" class="com.http.impl.httpclient.BasicAuthHttpFactory">
+		<constructor-arg index="0" value="${public-api.host}" />
+		<constructor-arg index="1" value="${admin.username}" />
+		<constructor-arg index="2" value="${admin.password}" />
+	</bean>
+
+	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetObject" ref="httpFactory" />
+		<property name="targetMethod" value="setPathParam" />
+		<property name="arguments">
+			<list>
+				<value>organization</value>
+				<value>${organization.name}</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="metadataHandler" class="com.http.proxy.impl.ApiMetadataHandlerImpl" />
+	<bean id="resultHandler" class="com.http.proxy.impl.ApiResultHandlerImpl" />
+
+	<bean id="apiMethodHandler" class="com.http.proxy.impl.ApiMethodHandlerImpl">
+		<constructor-arg type="com.http.proxy.ApiMetadataHandler"
+			ref="metadataHandler" />
+		<constructor-arg type="com.http.model.HttpFactory"
+			ref="httpFactory" />
+		<constructor-arg type="com.http.proxy.ApiResultHandler"
+			ref="resultHandler" />
+	</bean>
+
+	<bean id="apiProxyFactory" class="com.http.proxy.ApiProxyFactory">
+		<constructor-arg type="com.http.proxy.ApiMethodHandler"
+			ref="apiMethodHandler" />
+	</bean>
+
+	<bean id="ApigeeApiFactoryBean" class="com.util.ProxyFactoryBean">
+      <constructor-arg type="com.http.proxy.ApiProxyFactory" ref="apiProxyFactory"/>
+    	<constructor-arg type="java.lang.Class" value="com.apigee.ApigeeAPI"/>
+    </bean>
+
+</beans>

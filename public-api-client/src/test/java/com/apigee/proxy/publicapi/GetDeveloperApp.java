@@ -1,21 +1,13 @@
 package com.apigee.proxy.publicapi;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetDeveloperApp {
+public class GetDeveloperApp extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String appName = "4866ea87-6db2-4772-9b0c-6db480eccba9";
 
-		final String organization = Org.INFOGROUP;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
-		final String appName = "4866ea87-6db2-4772-9b0c-6db480eccba9";
+	public void testGetDeveloperApp() {
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		publicApi.getApp(appName);
+		getPublicApi().getApp(appName);
 	}
 }

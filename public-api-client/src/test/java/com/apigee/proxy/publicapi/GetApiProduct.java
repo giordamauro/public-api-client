@@ -1,21 +1,16 @@
 package com.apigee.proxy.publicapi;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
-import com.util.ApiGeeUtil;
+import org.testng.annotations.Test;
 
-public class GetApiProduct {
+import com.util.ApigeePublicApiTest;
 
-	public static void main(String[] args) {
+public class GetApiProduct extends ApigeePublicApiTest {
 
-		final String organization = Org.MGIORDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
-		final String apiProductName = "product_with_selected_resources";
+	private final String apiProductName = "product_with_selected_resources";
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
+	@Test
+	public void testGetApiProduct() {
 
-		publicApi.getApiProduct(apiProductName);
+		getPublicApi().getApiProduct(apiProductName);
 	}
 }

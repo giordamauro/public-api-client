@@ -1,25 +1,25 @@
 package com.apigee.proxy.publicapi;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
-import com.util.ApiGeeUtil;
+import org.springframework.beans.factory.annotation.Value;
+import org.testng.annotations.Test;
 
-public class UndeployApiRevision {
+import com.util.ApigeePublicApiTest;
 
-	public static void main(String[] args) {
+public class UndeployApiRevision extends ApigeePublicApiTest {
 
-		final String organization = Org.MGIORDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
+	@Value("${environment.name}")
+	private String environment;
 
-		final String environment = "test";
-		final String apiName = "agero-resource-product";
-		final int revision = 6;
+	@Value("${api.name}")
+	private String api;
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
+	@Value("${revision.number}")
+	private int revision;
 
-		String deploymentResult1 = publicApi.undeployApiProxyRevision(environment, apiName, revision);
+	@Test
+	public void testUndeployRevision() {
+
+		String deploymentResult1 = getPublicApi().undeployApiProxyRevision(environment, api, revision);
 
 		System.out.println(deploymentResult1);
 

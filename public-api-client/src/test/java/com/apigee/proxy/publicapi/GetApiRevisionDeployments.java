@@ -1,24 +1,15 @@
 package com.apigee.proxy.publicapi;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetApiRevisionDeployments {
+public class GetApiRevisionDeployments extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String apiName = "wrapper-md5";
+	private final int revision = 1;
 
-		final String organization = Org.MGIORDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
+	public void testGetApiRevisionDeployments() {
 
-		final String apiName = "wrapper-md5";
-		final int revision = 1;
-
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		String deployments = publicApi.getApiRevisionDeployments(apiName, revision);
+		String deployments = getPublicApi().getApiRevisionDeployments(apiName, revision);
 
 		System.out.println(deployments);
 

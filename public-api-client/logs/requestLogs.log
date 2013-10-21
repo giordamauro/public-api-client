@@ -1,24 +1,3598 @@
-2013-10-02 16:09:31,477 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
-2013-10-02 16:09:31,874 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/4/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 16:09:36,095 INFO - Response: 404, Headers: {Date=Wed, 02 Oct 2013 19:09:24 GMT, Content-Length=192, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
-2013-10-02 16:09:49,089 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
-2013-10-02 16:09:49,114 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/1/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 16:09:51,729 INFO - Response: 400, Headers: {Date=Wed, 02 Oct 2013 19:09:40 GMT, Content-Length=189, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
-2013-10-02 16:14:11,535 INFO - Invoking service method: 'ApigeeAPI.getApiRevisionDeployments(String, int)'
-2013-10-02 16:14:11,559 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/1/deployments" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 16:14:14,183 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 19:14:02 GMT, Content-Length=101, Connection=keep-alive, Content-Type=application/json}
-2013-10-02 17:24:40,019 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
-2013-10-02 17:24:40,044 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/revisions/1/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 17:24:42,767 INFO - Response: 400, Headers: {Date=Wed, 02 Oct 2013 20:24:31 GMT, Content-Length=189, Connection=keep-alive, Content-Type=application/json, Server=Jetty(8.0.4.v20111024)}
-2013-10-02 18:14:46,992 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
-2013-10-02 18:14:47,019 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/agero-resource-product/revisions/6/deployments?action=undeploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 18:14:50,006 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:14:38 GMT, Content-Length=1187, Connection=keep-alive, Content-Type=application/json}
-2013-10-02 18:15:13,332 INFO - Invoking service method: 'ApigeeAPI.deployApiProxyRevision(String, int, String, String)'
-2013-10-02 18:15:13,356 INFO - curl -k -v -X POST "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/agero-resource-product/revisions/6/deployments?action=deploy&env=test" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 18:15:19,849 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:15:08 GMT, Content-Length=1169, Connection=keep-alive, Content-Type=application/json}
-2013-10-02 18:20:20,610 INFO - Invoking service method: 'ApigeeAPI.getApiDeployments(String)'
-2013-10-02 18:20:20,632 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/mgiorda/apis/wrapper-md5/deployments" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 18:20:22,546 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:20:11 GMT, Content-Length=81, Connection=keep-alive, Content-Type=application/json}
-2013-10-02 18:27:01,436 INFO - Invoking service method: 'ApigeeAPI.undeployApiProxyRevision(String, String, int)'
-2013-10-02 18:27:01,463 INFO - curl -k -v -X DELETE "https://api.enterprise.apigee.com/v1/organizations/mgiorda/environments/test/apis/agero-resource-product/revisions/6/deployments" -u mgiorda@apigee.com:1234321Nomejodas
-2013-10-02 18:27:04,172 INFO - Response: 200, Headers: {Date=Wed, 02 Oct 2013 21:26:52 GMT, Content-Length=1187, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:16,160 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:16,162 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8b0ea6f4-ddec-41d7-be83-2ce8ad6e775f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:16,791 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:11 GMT, Content-Length=871, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:16,792 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8b0ea6f4-ddec-41d7-be83-2ce8ad6e775f",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340312932000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "79d6a758bf7206ee87801eb8807f7098",
+    "consumerSecret" : "2dd01fa05f5f951d",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1340312932000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Nederlander DPS",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:16,795 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:16,797 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/956f5e59-0fa9-434c-b211-d64cef307617" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:17,534 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:12 GMT, Content-Length=794, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:17,535 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "956f5e59-0fa9-434c-b211-d64cef307617",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1347329017000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "dcc6dbdfd49c44332767fe86c9024029",
+    "consumerSecret" : "9570a10a8b956c4c",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "41",
+  "lastModifiedAt" : 1347329017000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Blueman Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:17,537 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:17,538 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/5ac8291e-7dcc-45c0-9775-a1755d4894de" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:18,119 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:12 GMT, Content-Length=1019, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:18,120 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "5ac8291e-7dcc-45c0-9775-a1755d4894de",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1339705089000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "oauth_product",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "a9d30b54230953a3624c4e86024a26f3",
+    "consumerSecret" : "66d3997a8fda891a",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1339705089000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Calendar Widget",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:18,123 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:18,124 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0a98f7e2-9b6a-4d0a-b1ba-88deb6d6a70b" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:18,696 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:13 GMT, Content-Length=874, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:18,696 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0a98f7e2-9b6a-4d0a-b1ba-88deb6d6a70b",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1359423239000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "f6b17e540fdb7982407bac0c51217bd5",
+    "consumerSecret" : "a3091d4460dcd4c2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "47",
+  "lastModifiedAt" : 1359423239000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Crossroads Website",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:18,699 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:18,700 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/7012562a-443e-4e55-822b-643bc19a6a2f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:19,254 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:14 GMT, Content-Length=801, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:19,255 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7012562a-443e-4e55-822b-643bc19a6a2f",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340918712000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "997f50fff04a9cbbf9d94275707829eb",
+    "consumerSecret" : "bf31f10fa9109a48",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1340918712000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Disney Theatrical Group",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:19,258 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:19,259 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/2faea212-1e87-4144-9315-ef71c22a6198" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:19,906 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:14 GMT, Content-Length=959, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:19,907 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "2faea212-1e87-4144-9315-ef71c22a6198",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1358475840000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "2c5647189070f5009f940029052bc3d4",
+    "consumerSecret" : "c342ac236ecf3e33",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "46",
+  "lastModifiedAt" : 1358475840000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Live Nation Concert Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:19,909 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:19,911 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/1010245d-a0aa-48ea-a970-5d96b569b7ec" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:20,479 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:15 GMT, Content-Length=1075, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:20,479 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "1010245d-a0aa-48ea-a970-5d96b569b7ec",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "ApigeeHealthCheck"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.apigee.com",
+  "createdAt" : 1342136340000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "2db9b643cd4a5605f6160be2e9f45d59",
+    "consumerSecret" : "7f9502a45d98c1cb",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "32",
+  "lastModifiedAt" : 1371584143843,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "newTestApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:20,482 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:20,483 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/65abf20b-4e7a-4e03-9fec-6e410b6f9d14" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:21,134 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:15 GMT, Content-Length=929, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:21,134 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "65abf20b-4e7a-4e03-9fec-6e410b6f9d14",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "QA_Permission_Test"
+  }, {
+    "name" : "Notes",
+    "value" : "QA_multiple_Permission_Testing"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1377852024216,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "w3fFSEKGCNbWhiBvnSZCv1yEPA2XF7po",
+    "consumerSecret" : "8mV8FaMlbO9TB1ND",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "U6bDTVAMjdfBlJCu",
+  "lastModifiedAt" : 1377852024216,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "QAPermissionTest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:21,136 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:21,138 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/d41f490e-2cca-44e6-8e85-98eedda30197" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:21,700 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:16 GMT, Content-Length=886, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:21,700 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "d41f490e-2cca-44e6-8e85-98eedda30197",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "QA_APP"
+  }, {
+    "name" : "Notes",
+    "value" : "QA Testing"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1377842695289,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "HtAYBoyIsM6XxWYLvk7SKJJFtMPzwneF",
+    "consumerSecret" : "J1y31wKKAfqp7B02",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "IE2BPWLujWq4KJsf",
+  "lastModifiedAt" : 1377842695289,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "QAAPP",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:21,703 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:21,704 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/d8ab9241-64e4-4856-9d40-65ddd404850b" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:22,268 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:17 GMT, Content-Length=874, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:22,269 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "d8ab9241-64e4-4856-9d40-65ddd404850b",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1347493768000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "96726d7bd60297e88cd90f3a63a18e0b",
+    "consumerSecret" : "5b5403657345d2de",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "42",
+  "lastModifiedAt" : 1347493768000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Test account",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:22,271 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:22,272 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/2c36e6db-7da6-406a-8b62-f9fa003a3b4f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:22,920 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:17 GMT, Content-Length=1249, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:22,921 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "2c36e6db-7da6-406a-8b62-f9fa003a3b4f",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "Test_apigee"
+  }, {
+    "name" : "Notes",
+    "value" : "callback url"
+  }, {
+    "name" : "identityperms",
+    "value" : "omit_service_token=true,can_get_partner_events=true,can_get_partner_order_history=true,can_get_partner_file=true,can_get_partner_ticket_text=true,can_get_event_availability_search=true"
+  }, {
+    "name" : "identityattrs",
+    "value" : "solr_event_listing=tm_us_ca,partner_search_results_max=1000"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1375940792704,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "PmB5WOIxaop6XA2ZugR5y1KlVzT84bJ9",
+    "consumerSecret" : "4shCwQO58WIoF4La",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZApV9TB9tzk6Ow6p",
+  "lastModifiedAt" : 1376309558021,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "Testapigee",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:22,924 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:22,925 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/728bbcc4-21cf-460e-a72a-83739cc7c457" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:23,571 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:18 GMT, Content-Length=937, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:23,572 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "728bbcc4-21cf-460e-a72a-83739cc7c457",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1345508030000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "aff48c437229e2c12072ad4b20da5a25",
+    "consumerSecret" : "62e182b7d6e7e4b0",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "37",
+  "lastModifiedAt" : 1345508030000,
+  "lastModifiedBy" : "seshir",
+  "name" : "CS EDS",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:23,574 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:23,576 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/eb023997-172b-4a1a-918e-2f462a1d1a2c" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:24,165 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:19 GMT, Content-Length=870, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:24,165 INFO - Parsing json: '{
+  "accessType" : "readwrite",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "eb023997-172b-4a1a-918e-2f462a1d1a2c",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340951239000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "a30fb5b3907934f917107913e6a588e1",
+    "consumerSecret" : "9b14e1906cb6474d",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "20",
+  "lastModifiedAt" : 1340951239000,
+  "lastModifiedBy" : "seshir",
+  "name" : "ClubCo Venues",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:24,168 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:24,169 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/7fa5142f-1704-4d73-b956-f06568411665" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:24,838 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:19 GMT, Content-Length=638, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:24,838 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7fa5142f-1704-4d73-b956-f06568411665",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340079051000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "d83528b9d0526aae9c15938ddba3942e",
+    "consumerSecret" : "a3cfb0661c8a8270",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "revoked"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1340079051000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Brokers R Us",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:24,840 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:24,841 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/26eb3d47-aaef-47eb-ac2d-cd54191a9e51" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:25,465 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:20 GMT, Content-Length=792, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:25,466 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "26eb3d47-aaef-47eb-ac2d-cd54191a9e51",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1366338996000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ee0e0f2a3ae8030ebd13657a5e127fc5",
+    "consumerSecret" : "12487aeeaff350bc",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1366338996000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Annie Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:25,469 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:25,470 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8ed846d0-356b-40f8-b08f-08d776937919" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:26,043 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:20 GMT, Content-Length=639, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:26,044 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8ed846d0-356b-40f8-b08f-08d776937919",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1341863878000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "cdf7206522fd5bf0cb76cf65f3bbd758",
+    "consumerSecret" : "6d2882f0b7aba7e1",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "15",
+  "lastModifiedAt" : 1341863878000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Android App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:26,046 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:26,047 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/481050d7-6960-465a-b10a-fc21da8e0b3a" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:26,618 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:21 GMT, Content-Length=793, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:26,619 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "481050d7-6960-465a-b10a-fc21da8e0b3a",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1366339045000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "b49cf8bf64c895ab3176d35063a9a9fc",
+    "consumerSecret" : "ed926f8b050fef4b",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1366339045000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Wicked Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:26,621 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:26,622 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8382dce0-59b8-4736-a2b8-0d58dba301a7" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:27,195 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:22 GMT, Content-Length=1053, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:27,195 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8382dce0-59b8-4736-a2b8-0d58dba301a7",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "Live Nation Labs Mobile App"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378487882953,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "6Msh5ZMIBXfDIVgEsf4rUxBisdSMn5FB",
+    "consumerSecret" : "hhYlI5GlP5Dxn6AV",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "KmByF0A3TeVZgFQO",
+  "lastModifiedAt" : 1378487882953,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "Live-Nation-Labs-Mobile-App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:27,198 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:27,199 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/56b9f1b1-e5d4-4693-864a-143fc0ec55de" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:27,793 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:22 GMT, Content-Length=789, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:27,793 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "56b9f1b1-e5d4-4693-864a-143fc0ec55de",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1345047985000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "dadf8b472935f149dd8bd3db0337409f",
+    "consumerSecret" : "29a248e85278ecf2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "36",
+  "lastModifiedAt" : 1345047985000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Spotify App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:27,796 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:27,797 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0ce6ba2f-2439-4b51-a0da-f4e3a55f535e" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:28,438 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:23 GMT, Content-Length=1177, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:28,439 INFO - Parsing json: '{
+  "accessType" : "readwrite",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0ce6ba2f-2439-4b51-a0da-f4e3a55f535e",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1341595598000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "9fd328a204415fc296551da2a18ce649",
+    "consumerSecret" : "eaa884380aa6f079",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "29",
+  "lastModifiedAt" : 1341595598000,
+  "lastModifiedBy" : "seshir",
+  "name" : "testAppApigee",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:28,441 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:28,442 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/a2cfacd1-376e-4ac1-8840-8d4423aa56ac" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:29,028 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:23 GMT, Content-Length=709, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:29,028 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "a2cfacd1-376e-4ac1-8840-8d4423aa56ac",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1354311305000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_ism",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "6851b5614d09ae94b0d03dec10e89f76",
+    "consumerSecret" : "0d50bea229006838",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "45",
+  "lastModifiedAt" : 1354311305000,
+  "lastModifiedBy" : "seshir",
+  "name" : "IsmDiscovery",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:29,031 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:29,032 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/658acf83-0eb7-40b7-b15e-4dc6790359d4" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:29,602 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:24 GMT, Content-Length=909, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:29,603 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "658acf83-0eb7-40b7-b15e-4dc6790359d4",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "Attribute_test"
+  }, {
+    "name" : "Notes",
+    "value" : "Attribute testing"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378797493174,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "okI4tqpPKNu6IzFAg1m3zIQd4JjtYAXm",
+    "consumerSecret" : "ENAZdKqGoQ4Bqpuk",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ikhJlme0Y0GERJPY",
+  "lastModifiedAt" : 1378797493174,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "Attributetest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:29,605 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:29,606 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/679fc942-e2f6-4bb2-9c09-51bd37b925bf" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:30,176 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:25 GMT, Content-Length=799, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:30,177 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "679fc942-e2f6-4bb2-9c09-51bd37b925bf",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1347059627000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "0ae2bec96fd402c7d00ddc60ca2b9440",
+    "consumerSecret" : "23b9aa8e7fbcd8e0",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "39",
+  "lastModifiedAt" : 1347059627000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Social Digital TV",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:30,179 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:30,180 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/b0365224-b333-4b94-bd04-7a14beaf66b9" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:30,811 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:25 GMT, Content-Length=1047, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:30,811 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "b0365224-b333-4b94-bd04-7a14beaf66b9",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "LN Labs iPhone App"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378488175942,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "platinum_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "8Eqk6NkoW57dVwSsztpHDGHOdpyGFfRD",
+    "consumerSecret" : "XzN6Ggy4M8xejqHC",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "KmByF0A3TeVZgFQO",
+  "lastModifiedAt" : 1378488175942,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "LN-Labs-iPhone-App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:30,813 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:30,814 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/bf96642d-49f8-4629-8a99-b9117ef844df" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:31,385 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:26 GMT, Content-Length=934, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:31,385 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "bf96642d-49f8-4629-8a99-b9117ef844df",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "87AM_Disney"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.87am.com",
+  "createdAt" : 1371757902148,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "xR5qYK4wNcYQVAqTUPzwdZncsCCTfmjG",
+    "consumerSecret" : "X1Lua4jSULcopTz2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "nyGBE0rTRn7ERpN7",
+  "lastModifiedAt" : 1371757902148,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "87AMDisney",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:31,388 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:31,389 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0a4c270e-c301-4ca3-b500-7f81c8e64152" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:32,057 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:26 GMT, Content-Length=793, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:32,057 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0a4c270e-c301-4ca3-b500-7f81c8e64152",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1359773618000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "4da5f4f8cc4b2f0596c741fc1a0a1647",
+    "consumerSecret" : "1e4333d72e944ec3",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "8",
+  "lastModifiedAt" : 1359773618000,
+  "lastModifiedBy" : "seshir",
+  "name" : "apigeeOutageTest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:32,059 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:32,060 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/c767b479-af20-4afd-9fb0-f990825aafbc" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:32,686 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:27 GMT, Content-Length=799, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:32,686 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "c767b479-af20-4afd-9fb0-f990825aafbc",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1343337012000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "revoked"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "revoked"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "d957e0522a374ccfa1e35b455e540469",
+    "consumerSecret" : "26d46692f2db1713",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "34",
+  "lastModifiedAt" : 1343337012000,
+  "lastModifiedBy" : "seshir",
+  "name" : "HOB restaurant calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:32,688 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:32,689 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/460913f1-3a00-4e1c-9048-de45dd681306" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:33,337 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:28 GMT, Content-Length=797, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:33,337 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "460913f1-3a00-4e1c-9048-de45dd681306",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1366339030000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "975acffd64c860fbcf2ce49854c6b126",
+    "consumerSecret" : "a259eb5080f0f538",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1366339030000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Spider-man Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:33,341 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:33,342 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0c355278-4d10-4cf2-a8e8-a2b3c579b827" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:33,954 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:28 GMT, Content-Length=878, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:33,955 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0c355278-4d10-4cf2-a8e8-a2b3c579b827",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1365103989000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "b8c8a2fa6d03afdb93def073bf0c971a",
+    "consumerSecret" : "72a1480a8cc9f37f",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "51",
+  "lastModifiedAt" : 1365103989000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Live Nation Labs Platform",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:33,957 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:33,958 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/640fcb8e-f6a2-4c1a-85bc-b1ed7cb85407" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:34,597 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:29 GMT, Content-Length=1109, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:34,597 INFO - Parsing json: '{
+  "accessType" : "read",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "640fcb8e-f6a2-4c1a-85bc-b1ed7cb85407",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "benk@americaneagle.com"
+  }, {
+    "name" : "DisplayName",
+    "value" : "USTA"
+  }, {
+    "name" : "Notes",
+    "value" : "Calendar on the USTA site for US Open tickets"
+  }, {
+    "name" : "lastModifier",
+    "value" : ""
+  } ],
+  "callbackUrl" : "http://www.usopen.org/",
+  "createdAt" : 1369077406302,
+  "createdBy" : "adminui@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "z2qnGfxtUjRqYwsooLj1LJ6H6ncmBCit",
+    "consumerSecret" : "4FNPCHEL67JwUHUV",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "zH3GSh52XzO9QNdG",
+  "lastModifiedAt" : 1369077406302,
+  "lastModifiedBy" : "adminui@apigee.com",
+  "name" : "usta",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:34,599 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:34,600 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/50e34bca-c5d4-4584-b8f8-f3cc63434a08" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:35,180 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:30 GMT, Content-Length=875, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:35,181 INFO - Parsing json: '{
+  "accessType" : "readwrite",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "50e34bca-c5d4-4584-b8f8-f3cc63434a08",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1339777682000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "edacd169c65c1e741bfcf7be538d3907",
+    "consumerSecret" : "9578b3b82b21d50e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "9",
+  "lastModifiedAt" : 1339777682000,
+  "lastModifiedBy" : "seshir",
+  "name" : "TAP For the Browser",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:35,183 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:35,184 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/3dbe43d3-6265-40f3-a9fa-577133aea85d" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:35,755 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:30 GMT, Content-Length=647, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:35,756 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "3dbe43d3-6265-40f3-a9fa-577133aea85d",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340647175000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "58321a091564bb86de245eac238dd4ee",
+    "consumerSecret" : "87faf212768b76d8",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1340647175000,
+  "lastModifiedBy" : "seshir",
+  "name" : "yet another test app",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:35,757 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:35,758 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/57d1296b-b1e4-4ecb-badb-786f3be71e11" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:36,391 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:31 GMT, Content-Length=794, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:36,392 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "57d1296b-b1e4-4ecb-badb-786f3be71e11",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "sblank_lnlabs"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1375739435315,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "5vSnsf9aYmBbcPFAHYGhwB1cGbM7SeIb",
+    "consumerSecret" : "nSRLBGPCKWCjZwy7",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "9LVUwgjJ9zGPuGuH",
+  "lastModifiedAt" : 1375739435315,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "sblanklnlabs",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:36,394 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:36,395 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/af884273-3aff-46f6-8411-ed5cdc672ac9" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:37,052 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:31 GMT, Content-Length=872, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:37,052 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "af884273-3aff-46f6-8411-ed5cdc672ac9",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1343162222000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ec8d5e8d927b1e96e372571822d7b255",
+    "consumerSecret" : "3f811d947b5ff45e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "33",
+  "lastModifiedAt" : 1343162222000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Wordpress plugin",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:37,054 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:37,056 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/ec8cb03f-1063-4ab3-a3be-c356eaebfd80" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:37,671 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:32 GMT, Content-Length=868, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:37,672 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "ec8cb03f-1063-4ab3-a3be-c356eaebfd80",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1339801693000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "766cd5610996718a825974c9422dc27e",
+    "consumerSecret" : "c811e247c6492d2d",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1339801693000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Event Browser",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:37,675 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:37,676 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/20aa1b28-f41c-4b28-b204-dedc84c27e8a" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:38,293 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:33 GMT, Content-Length=838, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:38,294 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "20aa1b28-f41c-4b28-b204-dedc84c27e8a",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "showtimeCMS"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  } ],
+  "callbackUrl" : "",
+  "createdAt" : 1361572881000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ac64486c56beb5d6d2eb44af74f981e6",
+    "consumerSecret" : "51724b1d4a9e9f55",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "48",
+  "lastModifiedAt" : 1381876201201,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "showtimeCMS",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:26:38,296 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:26:38,297 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/94ae58c9-f45d-40f1-8baf-8fe902dca4a0" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:26:38,906 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:26:33 GMT, Content-Length=993, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:26:38,906 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "94ae58c9-f45d-40f1-8baf-8fe902dca4a0",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "test_perm_app"
+  }, {
+    "name" : "Notes",
+    "value" : "testing"
+  }, {
+    "name" : "identityperms",
+    "value" : "can_search_venues=false,can_get_venue=false"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1376393085172,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "wL2z9stVGJ4h1CLQCDffFPraVH6LaNhv",
+    "consumerSecret" : "G8ygNnH1WQA4SJ9e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "oR9FGmlTBafLAG1g",
+  "lastModifiedAt" : 1377078649148,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "testpermapp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:08,312 INFO - Invoking service method: 'ApigeeAPI.getApps()'
+2013-10-18 18:52:08,338 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:10,591 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:05 GMT, Content-Length=2242, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:10,596 INFO - Parsing json: '[ "d91c0a8f-8b3b-45f5-8e2d-dac4435419bf", "f83287b8-61c2-4b31-aca1-82fd95d7ecef", "22b04e32-d4ba-4664-9d1c-c697ff7b878c", "dacc135c-58e2-4d18-9c14-6e7a1adee6b4", "c530a96c-8352-45d5-ad8f-812445f4bcef", "17328936-2e7c-4456-9582-d95ad9595755", "5e23255c-d51e-4e51-a09a-49606fcf6fe4", "8d4cb38d-7044-475c-a168-95ef87113957", "7a4b5f80-71a6-4b23-93da-19d66dd57eb7", "5980369d-8214-427c-bb4b-01e4a7d38e6a", "c697a35f-f67d-4dd7-99de-e6b44d3fb9c4", "10aaba16-8377-4698-9372-de7ab197586e", "55883e77-ce29-4c8a-b528-93f903524370", "118bdd54-fca5-4b35-ad8c-074f043f4ead", "226b6694-d319-4971-b439-8e2d38200cfd", "4943d1da-14e0-41d8-b57f-9c587d801608", "7cf2581d-7339-4c38-b805-f018ba01e91f", "4f6158e7-89ee-4f8c-875e-0f932c105bdb", "44ddb739-ed08-4b8e-bb94-0467035c7ba8", "8b0ea6f4-ddec-41d7-be83-2ce8ad6e775f", "956f5e59-0fa9-434c-b211-d64cef307617", "5ac8291e-7dcc-45c0-9775-a1755d4894de", "0a98f7e2-9b6a-4d0a-b1ba-88deb6d6a70b", "7012562a-443e-4e55-822b-643bc19a6a2f", "2faea212-1e87-4144-9315-ef71c22a6198", "1010245d-a0aa-48ea-a970-5d96b569b7ec", "65abf20b-4e7a-4e03-9fec-6e410b6f9d14", "d41f490e-2cca-44e6-8e85-98eedda30197", "d8ab9241-64e4-4856-9d40-65ddd404850b", "2c36e6db-7da6-406a-8b62-f9fa003a3b4f", "728bbcc4-21cf-460e-a72a-83739cc7c457", "eb023997-172b-4a1a-918e-2f462a1d1a2c", "7fa5142f-1704-4d73-b956-f06568411665", "26eb3d47-aaef-47eb-ac2d-cd54191a9e51", "8ed846d0-356b-40f8-b08f-08d776937919", "481050d7-6960-465a-b10a-fc21da8e0b3a", "8382dce0-59b8-4736-a2b8-0d58dba301a7", "56b9f1b1-e5d4-4693-864a-143fc0ec55de", "0ce6ba2f-2439-4b51-a0da-f4e3a55f535e", "a2cfacd1-376e-4ac1-8840-8d4423aa56ac", "658acf83-0eb7-40b7-b15e-4dc6790359d4", "679fc942-e2f6-4bb2-9c09-51bd37b925bf", "b0365224-b333-4b94-bd04-7a14beaf66b9", "bf96642d-49f8-4629-8a99-b9117ef844df", "0a4c270e-c301-4ca3-b500-7f81c8e64152", "c767b479-af20-4afd-9fb0-f990825aafbc", "460913f1-3a00-4e1c-9048-de45dd681306", "0c355278-4d10-4cf2-a8e8-a2b3c579b827", "640fcb8e-f6a2-4c1a-85bc-b1ed7cb85407", "50e34bca-c5d4-4584-b8f8-f3cc63434a08", "3dbe43d3-6265-40f3-a9fa-577133aea85d", "57d1296b-b1e4-4ecb-badb-786f3be71e11", "af884273-3aff-46f6-8411-ed5cdc672ac9", "ec8cb03f-1063-4ab3-a3be-c356eaebfd80", "20aa1b28-f41c-4b28-b204-dedc84c27e8a", "94ae58c9-f45d-40f1-8baf-8fe902dca4a0" ]'
+2013-10-18 18:52:10,647 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:10,649 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/d91c0a8f-8b3b-45f5-8e2d-dac4435419bf" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:11,227 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:06 GMT, Content-Length=868, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:11,227 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "d91c0a8f-8b3b-45f5-8e2d-dac4435419bf",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "TestApigee_donotdelete"
+  }, {
+    "name" : "Notes",
+    "value" : "Apigee Permission testing ids"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378373289766,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "Fn3SlLUooe78ZKet2GmoWkQTBqkRmGxG",
+    "consumerSecret" : "d6bUtuB54ui9ovKe",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "U6bDTVAMjdfBlJCu",
+  "lastModifiedAt" : 1378374257792,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "TestApigeepermissiontest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:11,236 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:11,237 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/f83287b8-61c2-4b31-aca1-82fd95d7ecef" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:11,937 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:06 GMT, Content-Length=1341, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:11,937 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "f83287b8-61c2-4b31-aca1-82fd95d7ecef",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1346200067000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_orderfeedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_ism",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "66c660f63ca09d044af6f2e5cebb8418",
+    "consumerSecret" : "6f3d682c605ae9ee",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "38",
+  "lastModifiedAt" : 1346200067000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Mobile Application Server",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:11,941 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:11,943 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/22b04e32-d4ba-4664-9d1c-c697ff7b878c" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:12,574 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:07 GMT, Content-Length=845, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:12,575 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "22b04e32-d4ba-4664-9d1c-c697ff7b878c",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "AdamTestWidget"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  } ],
+  "callbackUrl" : "",
+  "createdAt" : 1352426370000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "89591f0026377b1f992a26fe88523693",
+    "consumerSecret" : "62e021bdf56cf8a2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "8",
+  "lastModifiedAt" : 1380061217668,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "AdamColsonWidget",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:12,580 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:12,581 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/dacc135c-58e2-4d18-9c14-6e7a1adee6b4" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:13,306 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:08 GMT, Content-Length=956, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:13,306 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "dacc135c-58e2-4d18-9c14-6e7a1adee6b4",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "MLBAM_app"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  } ],
+  "callbackUrl" : "www.mlb.com",
+  "createdAt" : 1377292434585,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "platinum_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "N8NyzUftirsvZUwEiLOkcFthiIWbdtN5",
+    "consumerSecret" : "U9e5xPMyZfAbCtvy",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "1fwdv917cAAIwGok",
+  "lastModifiedAt" : 1380768872854,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "MLBAM_app",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:13,310 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:13,311 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/c530a96c-8352-45d5-ad8f-812445f4bcef" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:13,879 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:08 GMT, Content-Length=1331, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:13,879 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "c530a96c-8352-45d5-ad8f-812445f4bcef",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1358188264000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_orderfeedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_ism",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ef6f73051da238f3fdd35880cc25282e",
+    "consumerSecret" : "bab786a12c390b4c",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "45",
+  "lastModifiedAt" : 1358188264000,
+  "lastModifiedBy" : "seshir",
+  "name" : "bainPetProjectA",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:13,883 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:13,885 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/17328936-2e7c-4456-9582-d95ad9595755" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:14,463 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:09 GMT, Content-Length=1012, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:14,464 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "17328936-2e7c-4456-9582-d95ad9595755",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1351295116000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "partner",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "bf41b528ba46a66c01c58f16f57ac73e",
+    "consumerSecret" : "fefca8824befdb62",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "44",
+  "lastModifiedAt" : 1351295116000,
+  "lastModifiedBy" : "seshir",
+  "name" : "BigChampagne",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:14,468 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:14,469 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/5e23255c-d51e-4e51-a09a-49606fcf6fe4" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:15,059 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:09 GMT, Content-Length=1172, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:15,059 INFO - Parsing json: '{
+  "accessType" : "read",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "5e23255c-d51e-4e51-a09a-49606fcf6fe4",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "Jamie.Cameron@Ticketmaster.com"
+  }, {
+    "name" : "DisplayName",
+    "value" : "Jamie's QA of TAP"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  }, {
+    "name" : "lastModifier",
+    "value" : ""
+  } ],
+  "callbackUrl" : "https://www.ticketmaster.com",
+  "createdAt" : 1370113024401,
+  "createdBy" : "adminui@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "partner",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "5ZpRoyYVUZNzXW13aYAtsN3LQ8Lz2y8A",
+    "consumerSecret" : "rFFnVh7mvnLz4cYl",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZyTQ6GGeXA45pYC3",
+  "lastModifiedAt" : 1370113024401,
+  "lastModifiedBy" : "adminui@apigee.com",
+  "name" : "jamies-qa-of-tap",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:15,062 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:15,063 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8d4cb38d-7044-475c-a168-95ef87113957" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:15,661 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:10 GMT, Content-Length=955, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:15,661 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8d4cb38d-7044-475c-a168-95ef87113957",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1359596004000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "platinum_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "bf7366837115a45e120af323cd23fe30",
+    "consumerSecret" : "e8b3e6876d52ba49",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "44",
+  "lastModifiedAt" : 1359596004000,
+  "lastModifiedBy" : "seshir",
+  "name" : "BCLNfeed",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:15,664 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:15,664 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/7a4b5f80-71a6-4b23-93da-19d66dd57eb7" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:16,242 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:11 GMT, Content-Length=997, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:16,243 INFO - Parsing json: '{
+  "accessType" : "read",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7a4b5f80-71a6-4b23-93da-19d66dd57eb7",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "sshahi@apigee.com"
+  }, {
+    "name" : "DisplayName",
+    "value" : "UAT-Test-App"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  }, {
+    "name" : "lastModifier",
+    "value" : ""
+  } ],
+  "callbackUrl" : "http://www.google.com/",
+  "createdAt" : 1366715979491,
+  "createdBy" : "adminui@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "RLcsDAFe6ECsRfuVXOCiy7cvJPNrxxPu",
+    "consumerSecret" : "gjjG9lLmv4RulYQG",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "sdfts3ySJ4ACP424",
+  "lastModifiedAt" : 1366715979491,
+  "lastModifiedBy" : "adminui@apigee.com",
+  "name" : "uat-test-app",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:16,246 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:16,247 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/5980369d-8214-427c-bb4b-01e4a7d38e6a" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:16,865 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:11 GMT, Content-Length=810, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:16,866 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "5980369d-8214-427c-bb4b-01e4a7d38e6a",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1361835489000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "c6549bac971f58ddade64927c023b909",
+    "consumerSecret" : "017aea66c3f2e51f",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "49",
+  "lastModifiedAt" : 1361835489000,
+  "lastModifiedBy" : "seshir",
+  "name" : "TM Content Team Test Account",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:16,869 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:16,871 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/c697a35f-f67d-4dd7-99de-e6b44d3fb9c4" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:17,434 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:12 GMT, Content-Length=1136, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:17,435 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "c697a35f-f67d-4dd7-99de-e6b44d3fb9c4",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340146929000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "platinum_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "087fcf3357db53b3f2926dd41d46786e",
+    "consumerSecret" : "31fe87545219f6fe",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "14",
+  "lastModifiedAt" : 1340146929000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Concierge Development",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:17,438 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:17,440 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/10aaba16-8377-4698-9372-de7ab197586e" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:18,016 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:12 GMT, Content-Length=937, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:18,017 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "10aaba16-8377-4698-9372-de7ab197586e",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "TestApigee_donotdelete"
+  }, {
+    "name" : "Notes",
+    "value" : "Apigee Permission testing ids"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378374337639,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "8v3hpdRI1rUcGc73Oxvmo3ppvdGlKOl9",
+    "consumerSecret" : "AVkNGsdlagWHOHQf",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "wiGkOAbb65aSOEXO",
+  "lastModifiedAt" : 1378886495408,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "TestApigeedonotdelete",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:18,021 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:18,022 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/55883e77-ce29-4c8a-b528-93f903524370" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:18,588 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:13 GMT, Content-Length=1146, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:18,588 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "55883e77-ce29-4c8a-b528-93f903524370",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "TNowMarketing"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  }, {
+    "name" : "identityperms",
+    "value" : "can_get_event_availability=true"
+  } ],
+  "callbackUrl" : "",
+  "createdAt" : 1381446688466,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "68w3aCd2G81pYrnmwClK1HyTwoTXuLU7",
+    "consumerSecret" : "X9VfN4x4cJPt69ef",
+    "expiresAt" : -1,
+    "issuedAt" : 1381446688868,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "U6p3vtb7vZwkbPFm",
+  "lastModifiedAt" : 1381446917248,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "TNowMarketing",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:18,591 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:18,593 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/118bdd54-fca5-4b35-ad8c-074f043f4ead" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:19,163 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:13 GMT, Content-Length=895, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:19,163 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "118bdd54-fca5-4b35-ad8c-074f043f4ead",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "test_2"
+  }, {
+    "name" : "Notes",
+    "value" : "Creating second app"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1376462395072,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "qX0rDHFaIgXscqT1oVFkNZ8b6GySCFIs",
+    "consumerSecret" : "X1i1k8MAjnZppgLy",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "oR9FGmlTBafLAG1g",
+  "lastModifiedAt" : 1376462395072,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "test2",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:19,166 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:19,167 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/226b6694-d319-4971-b439-8e2d38200cfd" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:19,744 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:14 GMT, Content-Length=967, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:19,744 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "226b6694-d319-4971-b439-8e2d38200cfd",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "App OAuth Product Test"
+  }, {
+    "name" : "Notes",
+    "value" : "Just for testing CombinedOauthProxy in test environment"
+  } ],
+  "callbackUrl" : "",
+  "createdAt" : 1382128029822,
+  "createdBy" : "esanchez@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "oauth-product-test",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "Dos3nxBzq2Ciy5QwUHHiMaPZEtAIIKwT",
+    "consumerSecret" : "2abdseJYz7HeA7aS",
+    "expiresAt" : -1,
+    "issuedAt" : 1382128030122,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "OjsmvMeF5yAx94oA",
+  "lastModifiedAt" : 1382128050010,
+  "lastModifiedBy" : "esanchez@apigee.com",
+  "name" : "App-OAuth-Product-Test",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:19,751 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:19,752 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/4943d1da-14e0-41d8-b57f-9c587d801608" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:20,387 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:15 GMT, Content-Length=1038, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:20,387 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "4943d1da-14e0-41d8-b57f-9c587d801608",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "OauthTestApp"
+  }, {
+    "name" : "Notes",
+    "value" : "adding customer attributes-identityperms"
+  }, {
+    "name" : "identityperms",
+    "value" : "omit_service_token=true,can_get_partner_events=true"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1375917011695,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "rwdpV7M2iozVCUEssLOBBTQOotlbsXSB",
+    "consumerSecret" : "IOgJlkicPVYA5uVG",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZApV9TB9tzk6Ow6p",
+  "lastModifiedAt" : 1376285607283,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "OauthTestApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:20,391 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:20,393 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/7cf2581d-7339-4c38-b805-f018ba01e91f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:20,948 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:15 GMT, Content-Length=945, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:20,948 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7cf2581d-7339-4c38-b805-f018ba01e91f",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "DisneyAnalytics"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.disney.com",
+  "createdAt" : 1377635643542,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "C8IjGsmvXwHfOOkt5ukG207hhNzsPsCa",
+    "consumerSecret" : "bV9EPmqXouxGVXCm",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "HN4kqaKU1GVxvx1X",
+  "lastModifiedAt" : 1377635643542,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "DisneyAnalytics",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:20,951 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:20,952 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/4f6158e7-89ee-4f8c-875e-0f932c105bdb" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:21,601 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:16 GMT, Content-Length=1745, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:21,602 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "4f6158e7-89ee-4f8c-875e-0f932c105bdb",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "test app"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  } ],
+  "callbackUrl" : "",
+  "createdAt" : 1339728907000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_orderfeedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_ism",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_tickettransfer",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "partner",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "cards-Product",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "60586a194fd9ef6a8aaa4cb5492718d3",
+    "consumerSecret" : "812720d1d7e2689e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "8",
+  "lastModifiedAt" : 1381784945115,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "test app",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:21,604 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:21,605 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/44ddb739-ed08-4b8e-bb94-0467035c7ba8" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:22,181 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:17 GMT, Content-Length=1997, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:22,182 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "44ddb739-ed08-4b8e-bb94-0467035c7ba8",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "QAapp"
+  }, {
+    "name" : "Notes",
+    "value" : "Changing permissions"
+  }, {
+    "name" : "identityperms",
+    "value" : "omit_service_token=true,can_get_partner_events=true,can_get_partner_order_history=true,can_get_partner_file=true,can_get_partner_ticket_text=true,can_get_event_availability_search=true,can_search_events=true"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1371237210629,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_tickettransfer",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_orderfeedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "oauth_product",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "partner",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "21kvWn9fAC91svWlJoSwh8oyaZNtbpUx",
+    "consumerSecret" : "Rllv8MCRGGLb8Rbd",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZApV9TB9tzk6Ow6p",
+  "lastModifiedAt" : 1376501903216,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "QAapp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:22,184 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:22,186 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8b0ea6f4-ddec-41d7-be83-2ce8ad6e775f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:22,838 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:17 GMT, Content-Length=871, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:22,839 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8b0ea6f4-ddec-41d7-be83-2ce8ad6e775f",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340312932000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "79d6a758bf7206ee87801eb8807f7098",
+    "consumerSecret" : "2dd01fa05f5f951d",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1340312932000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Nederlander DPS",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:22,842 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:22,843 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/956f5e59-0fa9-434c-b211-d64cef307617" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:23,413 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:18 GMT, Content-Length=794, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:23,413 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "956f5e59-0fa9-434c-b211-d64cef307617",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1347329017000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "dcc6dbdfd49c44332767fe86c9024029",
+    "consumerSecret" : "9570a10a8b956c4c",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "41",
+  "lastModifiedAt" : 1347329017000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Blueman Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:23,415 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:23,416 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/5ac8291e-7dcc-45c0-9775-a1755d4894de" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:24,010 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:18 GMT, Content-Length=1019, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:24,010 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "5ac8291e-7dcc-45c0-9775-a1755d4894de",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1339705089000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "oauth_product",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "a9d30b54230953a3624c4e86024a26f3",
+    "consumerSecret" : "66d3997a8fda891a",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1339705089000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Calendar Widget",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:24,013 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:24,014 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0a98f7e2-9b6a-4d0a-b1ba-88deb6d6a70b" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:24,726 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:19 GMT, Content-Length=874, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:24,727 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0a98f7e2-9b6a-4d0a-b1ba-88deb6d6a70b",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1359423239000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "f6b17e540fdb7982407bac0c51217bd5",
+    "consumerSecret" : "a3091d4460dcd4c2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "47",
+  "lastModifiedAt" : 1359423239000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Crossroads Website",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:24,729 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:24,730 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/7012562a-443e-4e55-822b-643bc19a6a2f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:25,302 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:20 GMT, Content-Length=801, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:25,303 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7012562a-443e-4e55-822b-643bc19a6a2f",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340918712000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "997f50fff04a9cbbf9d94275707829eb",
+    "consumerSecret" : "bf31f10fa9109a48",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1340918712000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Disney Theatrical Group",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:25,306 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:25,307 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/2faea212-1e87-4144-9315-ef71c22a6198" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:25,969 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:20 GMT, Content-Length=959, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:25,969 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "2faea212-1e87-4144-9315-ef71c22a6198",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1358475840000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "2c5647189070f5009f940029052bc3d4",
+    "consumerSecret" : "c342ac236ecf3e33",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "46",
+  "lastModifiedAt" : 1358475840000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Live Nation Concert Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:25,972 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:25,973 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/1010245d-a0aa-48ea-a970-5d96b569b7ec" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:26,586 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:21 GMT, Content-Length=1075, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:26,586 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "1010245d-a0aa-48ea-a970-5d96b569b7ec",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "ApigeeHealthCheck"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.apigee.com",
+  "createdAt" : 1342136340000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "2db9b643cd4a5605f6160be2e9f45d59",
+    "consumerSecret" : "7f9502a45d98c1cb",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "32",
+  "lastModifiedAt" : 1371584143843,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "newTestApp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:26,588 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:26,589 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/65abf20b-4e7a-4e03-9fec-6e410b6f9d14" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:27,217 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:22 GMT, Content-Length=929, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:27,218 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "65abf20b-4e7a-4e03-9fec-6e410b6f9d14",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "QA_Permission_Test"
+  }, {
+    "name" : "Notes",
+    "value" : "QA_multiple_Permission_Testing"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1377852024216,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "w3fFSEKGCNbWhiBvnSZCv1yEPA2XF7po",
+    "consumerSecret" : "8mV8FaMlbO9TB1ND",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "U6bDTVAMjdfBlJCu",
+  "lastModifiedAt" : 1377852024216,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "QAPermissionTest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:27,220 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:27,221 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/d41f490e-2cca-44e6-8e85-98eedda30197" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:27,792 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:22 GMT, Content-Length=886, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:27,792 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "d41f490e-2cca-44e6-8e85-98eedda30197",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "QA_APP"
+  }, {
+    "name" : "Notes",
+    "value" : "QA Testing"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1377842695289,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "HtAYBoyIsM6XxWYLvk7SKJJFtMPzwneF",
+    "consumerSecret" : "J1y31wKKAfqp7B02",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "IE2BPWLujWq4KJsf",
+  "lastModifiedAt" : 1377842695289,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "QAAPP",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:27,795 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:27,796 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/d8ab9241-64e4-4856-9d40-65ddd404850b" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:28,365 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:23 GMT, Content-Length=874, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:28,366 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "d8ab9241-64e4-4856-9d40-65ddd404850b",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1347493768000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "96726d7bd60297e88cd90f3a63a18e0b",
+    "consumerSecret" : "5b5403657345d2de",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "42",
+  "lastModifiedAt" : 1347493768000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Test account",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:28,368 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:28,369 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/2c36e6db-7da6-406a-8b62-f9fa003a3b4f" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:29,026 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:23 GMT, Content-Length=1249, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:29,027 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "2c36e6db-7da6-406a-8b62-f9fa003a3b4f",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "Test_apigee"
+  }, {
+    "name" : "Notes",
+    "value" : "callback url"
+  }, {
+    "name" : "identityperms",
+    "value" : "omit_service_token=true,can_get_partner_events=true,can_get_partner_order_history=true,can_get_partner_file=true,can_get_partner_ticket_text=true,can_get_event_availability_search=true"
+  }, {
+    "name" : "identityattrs",
+    "value" : "solr_event_listing=tm_us_ca,partner_search_results_max=1000"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1375940792704,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "PmB5WOIxaop6XA2ZugR5y1KlVzT84bJ9",
+    "consumerSecret" : "4shCwQO58WIoF4La",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ZApV9TB9tzk6Ow6p",
+  "lastModifiedAt" : 1376309558021,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "Testapigee",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:29,030 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:29,031 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/728bbcc4-21cf-460e-a72a-83739cc7c457" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:29,684 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:24 GMT, Content-Length=937, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:29,684 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "728bbcc4-21cf-460e-a72a-83739cc7c457",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1345508030000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "aff48c437229e2c12072ad4b20da5a25",
+    "consumerSecret" : "62e182b7d6e7e4b0",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "37",
+  "lastModifiedAt" : 1345508030000,
+  "lastModifiedBy" : "seshir",
+  "name" : "CS EDS",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:29,688 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:29,694 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/eb023997-172b-4a1a-918e-2f462a1d1a2c" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:30,276 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:25 GMT, Content-Length=870, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:30,276 INFO - Parsing json: '{
+  "accessType" : "readwrite",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "eb023997-172b-4a1a-918e-2f462a1d1a2c",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340951239000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "a30fb5b3907934f917107913e6a588e1",
+    "consumerSecret" : "9b14e1906cb6474d",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "20",
+  "lastModifiedAt" : 1340951239000,
+  "lastModifiedBy" : "seshir",
+  "name" : "ClubCo Venues",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:30,279 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:30,280 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/7fa5142f-1704-4d73-b956-f06568411665" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:30,967 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:25 GMT, Content-Length=638, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:30,967 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "7fa5142f-1704-4d73-b956-f06568411665",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340079051000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "d83528b9d0526aae9c15938ddba3942e",
+    "consumerSecret" : "a3cfb0661c8a8270",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "revoked"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1340079051000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Brokers R Us",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:30,969 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:30,970 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/26eb3d47-aaef-47eb-ac2d-cd54191a9e51" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:31,528 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:26 GMT, Content-Length=792, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:31,529 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "26eb3d47-aaef-47eb-ac2d-cd54191a9e51",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1366338996000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ee0e0f2a3ae8030ebd13657a5e127fc5",
+    "consumerSecret" : "12487aeeaff350bc",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1366338996000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Annie Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:31,532 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:31,533 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8ed846d0-356b-40f8-b08f-08d776937919" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:32,180 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:27 GMT, Content-Length=639, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:32,180 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8ed846d0-356b-40f8-b08f-08d776937919",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1341863878000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "cdf7206522fd5bf0cb76cf65f3bbd758",
+    "consumerSecret" : "6d2882f0b7aba7e1",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "15",
+  "lastModifiedAt" : 1341863878000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Android App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:32,182 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:32,183 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/481050d7-6960-465a-b10a-fc21da8e0b3a" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:32,811 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:27 GMT, Content-Length=793, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:32,811 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "481050d7-6960-465a-b10a-fc21da8e0b3a",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1366339045000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "b49cf8bf64c895ab3176d35063a9a9fc",
+    "consumerSecret" : "ed926f8b050fef4b",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1366339045000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Wicked Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:32,814 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:32,815 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/8382dce0-59b8-4736-a2b8-0d58dba301a7" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:33,430 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:28 GMT, Content-Length=1053, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:33,431 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "8382dce0-59b8-4736-a2b8-0d58dba301a7",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "Live Nation Labs Mobile App"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378487882953,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "6Msh5ZMIBXfDIVgEsf4rUxBisdSMn5FB",
+    "consumerSecret" : "hhYlI5GlP5Dxn6AV",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "KmByF0A3TeVZgFQO",
+  "lastModifiedAt" : 1378487882953,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "Live-Nation-Labs-Mobile-App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:33,433 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:33,434 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/56b9f1b1-e5d4-4693-864a-143fc0ec55de" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:34,019 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:28 GMT, Content-Length=789, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:34,019 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "56b9f1b1-e5d4-4693-864a-143fc0ec55de",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1345047985000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "dadf8b472935f149dd8bd3db0337409f",
+    "consumerSecret" : "29a248e85278ecf2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "36",
+  "lastModifiedAt" : 1345047985000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Spotify App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:34,021 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:34,022 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0ce6ba2f-2439-4b51-a0da-f4e3a55f535e" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:34,593 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:29 GMT, Content-Length=1177, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:34,594 INFO - Parsing json: '{
+  "accessType" : "readwrite",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0ce6ba2f-2439-4b51-a0da-f4e3a55f535e",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1341595598000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_admin",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_transactional",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "9fd328a204415fc296551da2a18ce649",
+    "consumerSecret" : "eaa884380aa6f079",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "29",
+  "lastModifiedAt" : 1341595598000,
+  "lastModifiedBy" : "seshir",
+  "name" : "testAppApigee",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:34,596 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:34,597 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/a2cfacd1-376e-4ac1-8840-8d4423aa56ac" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:35,181 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:30 GMT, Content-Length=709, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:35,182 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "a2cfacd1-376e-4ac1-8840-8d4423aa56ac",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1354311305000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_ism",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "6851b5614d09ae94b0d03dec10e89f76",
+    "consumerSecret" : "0d50bea229006838",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "45",
+  "lastModifiedAt" : 1354311305000,
+  "lastModifiedBy" : "seshir",
+  "name" : "IsmDiscovery",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:35,185 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:35,186 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/658acf83-0eb7-40b7-b15e-4dc6790359d4" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:35,754 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:30 GMT, Content-Length=909, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:35,754 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "658acf83-0eb7-40b7-b15e-4dc6790359d4",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "Attribute_test"
+  }, {
+    "name" : "Notes",
+    "value" : "Attribute testing"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378797493174,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "okI4tqpPKNu6IzFAg1m3zIQd4JjtYAXm",
+    "consumerSecret" : "ENAZdKqGoQ4Bqpuk",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "ikhJlme0Y0GERJPY",
+  "lastModifiedAt" : 1378797493174,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "Attributetest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:35,757 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:35,758 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/679fc942-e2f6-4bb2-9c09-51bd37b925bf" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:36,330 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:31 GMT, Content-Length=799, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:36,331 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "679fc942-e2f6-4bb2-9c09-51bd37b925bf",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1347059627000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "bronze_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "0ae2bec96fd402c7d00ddc60ca2b9440",
+    "consumerSecret" : "23b9aa8e7fbcd8e0",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "39",
+  "lastModifiedAt" : 1347059627000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Social Digital TV",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:36,333 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:36,334 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/b0365224-b333-4b94-bd04-7a14beaf66b9" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:37,049 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:31 GMT, Content-Length=1047, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:37,050 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "b0365224-b333-4b94-bd04-7a14beaf66b9",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "LN Labs iPhone App"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1378488175942,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "platinum_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_memberenabled",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "platinum_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "8Eqk6NkoW57dVwSsztpHDGHOdpyGFfRD",
+    "consumerSecret" : "XzN6Ggy4M8xejqHC",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "KmByF0A3TeVZgFQO",
+  "lastModifiedAt" : 1378488175942,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "LN-Labs-iPhone-App",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:37,052 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:37,053 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/bf96642d-49f8-4629-8a99-b9117ef844df" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:37,648 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:32 GMT, Content-Length=934, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:37,648 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "bf96642d-49f8-4629-8a99-b9117ef844df",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "87AM_Disney"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.87am.com",
+  "createdAt" : 1371757902148,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "xR5qYK4wNcYQVAqTUPzwdZncsCCTfmjG",
+    "consumerSecret" : "X1Lua4jSULcopTz2",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "nyGBE0rTRn7ERpN7",
+  "lastModifiedAt" : 1371757902148,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "87AMDisney",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:37,651 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:37,652 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0a4c270e-c301-4ca3-b500-7f81c8e64152" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:38,214 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:33 GMT, Content-Length=793, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:38,215 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0a4c270e-c301-4ca3-b500-7f81c8e64152",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1359773618000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "4da5f4f8cc4b2f0596c741fc1a0a1647",
+    "consumerSecret" : "1e4333d72e944ec3",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "8",
+  "lastModifiedAt" : 1359773618000,
+  "lastModifiedBy" : "seshir",
+  "name" : "apigeeOutageTest",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:38,216 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:38,216 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/c767b479-af20-4afd-9fb0-f990825aafbc" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:38,821 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:33 GMT, Content-Length=799, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:38,821 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "c767b479-af20-4afd-9fb0-f990825aafbc",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1343337012000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "revoked"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "revoked"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "d957e0522a374ccfa1e35b455e540469",
+    "consumerSecret" : "26d46692f2db1713",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "34",
+  "lastModifiedAt" : 1343337012000,
+  "lastModifiedBy" : "seshir",
+  "name" : "HOB restaurant calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:38,824 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:38,825 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/460913f1-3a00-4e1c-9048-de45dd681306" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:39,425 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:34 GMT, Content-Length=797, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:39,426 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "460913f1-3a00-4e1c-9048-de45dd681306",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1366339030000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "975acffd64c860fbcf2ce49854c6b126",
+    "consumerSecret" : "a259eb5080f0f538",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "16",
+  "lastModifiedAt" : 1366339030000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Spider-man Calendar",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:39,427 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:39,428 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/0c355278-4d10-4cf2-a8e8-a2b3c579b827" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:40,050 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:34 GMT, Content-Length=878, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:40,050 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "0c355278-4d10-4cf2-a8e8-a2b3c579b827",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1365103989000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_licensed",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "b8c8a2fa6d03afdb93def073bf0c971a",
+    "consumerSecret" : "72a1480a8cc9f37f",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "51",
+  "lastModifiedAt" : 1365103989000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Live Nation Labs Platform",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:40,052 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:40,053 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/640fcb8e-f6a2-4c1a-85bc-b1ed7cb85407" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:40,629 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:35 GMT, Content-Length=1109, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:40,629 INFO - Parsing json: '{
+  "accessType" : "read",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "640fcb8e-f6a2-4c1a-85bc-b1ed7cb85407",
+  "attributes" : [ {
+    "name" : "Developer",
+    "value" : "benk@americaneagle.com"
+  }, {
+    "name" : "DisplayName",
+    "value" : "USTA"
+  }, {
+    "name" : "Notes",
+    "value" : "Calendar on the USTA site for US Open tickets"
+  }, {
+    "name" : "lastModifier",
+    "value" : ""
+  } ],
+  "callbackUrl" : "http://www.usopen.org/",
+  "createdAt" : 1369077406302,
+  "createdBy" : "adminui@apigee.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "z2qnGfxtUjRqYwsooLj1LJ6H6ncmBCit",
+    "consumerSecret" : "4FNPCHEL67JwUHUV",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "zH3GSh52XzO9QNdG",
+  "lastModifiedAt" : 1369077406302,
+  "lastModifiedBy" : "adminui@apigee.com",
+  "name" : "usta",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:40,630 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:40,631 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/50e34bca-c5d4-4584-b8f8-f3cc63434a08" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:41,207 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:36 GMT, Content-Length=875, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:41,208 INFO - Parsing json: '{
+  "accessType" : "readwrite",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "50e34bca-c5d4-4584-b8f8-f3cc63434a08",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1339777682000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "edacd169c65c1e741bfcf7be538d3907",
+    "consumerSecret" : "9578b3b82b21d50e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "9",
+  "lastModifiedAt" : 1339777682000,
+  "lastModifiedBy" : "seshir",
+  "name" : "TAP For the Browser",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:41,212 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:41,213 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/3dbe43d3-6265-40f3-a9fa-577133aea85d" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:41,866 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:36 GMT, Content-Length=647, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:41,867 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "3dbe43d3-6265-40f3-a9fa-577133aea85d",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1340647175000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "58321a091564bb86de245eac238dd4ee",
+    "consumerSecret" : "87faf212768b76d8",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1340647175000,
+  "lastModifiedBy" : "seshir",
+  "name" : "yet another test app",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:41,869 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:41,870 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/57d1296b-b1e4-4ecb-badb-786f3be71e11" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:42,424 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:37 GMT, Content-Length=794, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:42,425 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "57d1296b-b1e4-4ecb-badb-786f3be71e11",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "sblank_lnlabs"
+  }, {
+    "name" : "Notes"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1375739435315,
+  "createdBy" : "adamcolson@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ ],
+    "attributes" : [ ],
+    "consumerKey" : "5vSnsf9aYmBbcPFAHYGhwB1cGbM7SeIb",
+    "consumerSecret" : "nSRLBGPCKWCjZwy7",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "9LVUwgjJ9zGPuGuH",
+  "lastModifiedAt" : 1375739435315,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "sblanklnlabs",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:42,427 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:42,428 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/af884273-3aff-46f6-8411-ed5cdc672ac9" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:43,097 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:37 GMT, Content-Length=872, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:43,097 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "af884273-3aff-46f6-8411-ed5cdc672ac9",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1343162222000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ec8d5e8d927b1e96e372571822d7b255",
+    "consumerSecret" : "3f811d947b5ff45e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "33",
+  "lastModifiedAt" : 1343162222000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Wordpress plugin",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:43,099 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:43,100 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/ec8cb03f-1063-4ab3-a3be-c356eaebfd80" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:43,762 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:38 GMT, Content-Length=868, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:43,763 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "ec8cb03f-1063-4ab3-a3be-c356eaebfd80",
+  "attributes" : [ ],
+  "callbackUrl" : "",
+  "createdAt" : 1339801693000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "gold_light",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_searchbrowse",
+      "status" : "approved"
+    }, {
+      "apiproduct" : "gold_feedenabled",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "766cd5610996718a825974c9422dc27e",
+    "consumerSecret" : "c811e247c6492d2d",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "6",
+  "lastModifiedAt" : 1339801693000,
+  "lastModifiedBy" : "seshir",
+  "name" : "Event Browser",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:43,765 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:43,766 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/20aa1b28-f41c-4b28-b204-dedc84c27e8a" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:44,327 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:39 GMT, Content-Length=838, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:44,327 INFO - Parsing json: '{
+  "accessType" : "readonly",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "20aa1b28-f41c-4b28-b204-dedc84c27e8a",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "showtimeCMS"
+  }, {
+    "name" : "Notes",
+    "value" : ""
+  } ],
+  "callbackUrl" : "",
+  "createdAt" : 1361572881000,
+  "createdBy" : "seshir",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "bronze_light",
+      "status" : "pending"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "ac64486c56beb5d6d2eb44af74f981e6",
+    "consumerSecret" : "51724b1d4a9e9f55",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "48",
+  "lastModifiedAt" : 1381876201201,
+  "lastModifiedBy" : "adamcolson@livenation.com",
+  "name" : "showtimeCMS",
+  "scopes" : [ ],
+  "status" : "approved"
+}'
+2013-10-18 18:52:44,328 INFO - Invoking service method: 'ApigeeAPI.getApp(String)'
+2013-10-18 18:52:44,329 INFO - curl -k -v -X GET "https://api.enterprise.apigee.com/v1/organizations/livenation/apps/94ae58c9-f45d-40f1-8baf-8fe902dca4a0" -u mgiorda@apigee.com:1234321Apigee
+2013-10-18 18:52:44,898 INFO - Response: 200, Headers: {Date=Fri, 18 Oct 2013 21:52:39 GMT, Content-Length=993, Connection=keep-alive, Content-Type=application/json}
+2013-10-18 18:52:44,898 INFO - Parsing json: '{
+  "accessType" : "",
+  "apiProducts" : [ ],
+  "appFamily" : "default",
+  "appId" : "94ae58c9-f45d-40f1-8baf-8fe902dca4a0",
+  "attributes" : [ {
+    "name" : "DisplayName",
+    "value" : "test_perm_app"
+  }, {
+    "name" : "Notes",
+    "value" : "testing"
+  }, {
+    "name" : "identityperms",
+    "value" : "can_search_venues=false,can_get_venue=false"
+  } ],
+  "callbackUrl" : "www.livenation.com",
+  "createdAt" : 1376393085172,
+  "createdBy" : "arunalagappan@livenation.com",
+  "credentials" : [ {
+    "apiProducts" : [ {
+      "apiproduct" : "testproduct",
+      "status" : "approved"
+    } ],
+    "attributes" : [ ],
+    "consumerKey" : "wL2z9stVGJ4h1CLQCDffFPraVH6LaNhv",
+    "consumerSecret" : "G8ygNnH1WQA4SJ9e",
+    "expiresAt" : -1,
+    "scopes" : [ ],
+    "status" : "approved"
+  } ],
+  "developerId" : "oR9FGmlTBafLAG1g",
+  "lastModifiedAt" : 1377078649148,
+  "lastModifiedBy" : "arunalagappan@livenation.com",
+  "name" : "testpermapp",
+  "scopes" : [ ],
+  "status" : "approved"
+}'

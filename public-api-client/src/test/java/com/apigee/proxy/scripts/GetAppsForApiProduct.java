@@ -1,40 +1,36 @@
 package com.apigee.proxy.scripts;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
+import org.testng.annotations.Test;
+
 import com.apigee.model.Credential;
 import com.apigee.model.DeveloperApp;
 import com.apigee.model.DeveloperAppApiProduct;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetAppsForApiProduct {
+public class GetAppsForApiProduct extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	// private final List<String> apiProducts = Arrays.asList(new String[] {
+	// "matt_test", "emailappend", "kcp", "Salesgenie", "apigeetestproduct",
+	// "fedexqaa", "fedexservices", "whitespark", "salesgenie2",
+	// "data_logix_unlimited" });
 
-		final String organization = Org.INFOGROUP;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
-		final List<String> apiProducts = Arrays.asList(new String[] { "matt_test", "emailappend", "kcp", "Salesgenie", "apigeetestproduct", "fedexqaa", "fedexservices", "whitespark", "salesgenie2",
-				"data_logix_unlimited" });
+	private final List<String> apiProducts = Collections.singletonList("master");
 
-		// final List<String> apiProducts =
-		// Collections.singletonList("Sandbox");
-
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
+	@Test
+	public void testGetAppsForApiProduct() {
 
 		Map<String, List<String>> apps = new HashMap<String, List<String>>();
 
-		List<String> develperApps = publicApi.getApps();
+		List<String> develperApps = getPublicApi().getApps();
 
 		for (String app : develperApps) {
-			DeveloperApp appInfo = publicApi.getApp(app);
+			DeveloperApp appInfo = getPublicApi().getApp(app);
 			List<Credential> credentials = appInfo.getCredentials();
 			for (Credential credential : credentials) {
 				List<DeveloperAppApiProduct> developerApiProducts = credential.getApiProducts();

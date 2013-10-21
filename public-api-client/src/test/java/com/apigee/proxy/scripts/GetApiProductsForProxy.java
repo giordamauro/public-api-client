@@ -13,10 +13,10 @@ public class GetApiProductsForProxy {
 
 	public static void main(String[] args) {
 
-		final String organization = Org.STAPLES;
+		final String organization = Org.LIVE_NATION;
 		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
-		final String proxyName = "StaplesEasyOpenAPI";
+		final String password = "1234321Apigee";
+		final String proxyName = "Member";
 
 		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
 

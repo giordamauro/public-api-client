@@ -1,24 +1,18 @@
 package com.apigee.proxy.scripts;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
+import org.testng.annotations.Test;
+
 import com.apigee.model.AccessToken;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetAccessTokenByKey {
+public class GetAccessTokenByKey extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String accessToken = "ZkKAkbgAztZ93xS4kuDMryVPaVKU";
 
-		final String organization = Org.OANDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
+	@Test
+	public void testGetAccessTokenByKey() {
 
-		final String accessToken = "ZkKAkbgAztZ93xS4kuDMryVPaVKU";
-
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		AccessToken info = publicApi.getAccessToken(accessToken);
+		AccessToken info = getPublicApi().getAccessToken(accessToken);
 
 		System.out.println(info.getStatus());
 	}

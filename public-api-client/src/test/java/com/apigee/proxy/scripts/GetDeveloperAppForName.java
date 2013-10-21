@@ -2,34 +2,29 @@ package com.apigee.proxy.scripts;
 
 import java.util.List;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
+import org.testng.annotations.Test;
+
 import com.apigee.model.DeveloperApp;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetDeveloperAppForName {
+public class GetDeveloperAppForName extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String appName = "";
 
-		final String organization = Org.MGIORDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
-		final String appName = "NewBrokenApp";
+	@Test
+	public void testGetDeveloperAppForName() {
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		DeveloperApp app = getAppNameForName(publicApi, appName);
+		DeveloperApp app = getAppNameForName(appName);
 
 		System.out.println(app);
 	}
 
-	private static DeveloperApp getAppNameForName(ApigeeAPI publicApi, String name) {
+	private DeveloperApp getAppNameForName(String name) {
 
-		List<String> apps = publicApi.getApps();
+		List<String> apps = getPublicApi().getApps();
 
 		for (String appName : apps) {
-			DeveloperApp app = publicApi.getApp(appName);
+			DeveloperApp app = getPublicApi().getApp(appName);
 			if (app.getName().equalsIgnoreCase(name)) {
 				return app;
 			}

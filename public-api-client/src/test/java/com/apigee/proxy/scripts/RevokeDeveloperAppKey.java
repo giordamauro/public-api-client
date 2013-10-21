@@ -1,23 +1,24 @@
 package com.apigee.proxy.scripts;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
-import com.util.ApiGeeUtil;
+import org.testng.annotations.Test;
 
-public class RevokeDeveloperAppKey {
+import com.util.ApigeePublicApiTest;
 
-	public static void main(String[] args) {
+public class RevokeDeveloperAppKey extends ApigeePublicApiTest {
 
-		final String organization = Org.MGIORDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
+	private final String developer = "";
+	private final String appName = "eomj_company_profile";
+	private final String apiKey = "";
 
-		final String appName = "eomj_company_profile";
-		final String apiKey = "HDMadGLRwPYSAuce7sp5slGGGzK3hOCR";
+	@Test
+	public void testRevokeDeveloperAppKey() {
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
+		getPublicApi().editDeveloperAppKey(developer, appName, apiKey, "revoke");
+	}
 
-		publicApi.editDeveloperAppKey("tjackson@monster.com", appName, apiKey, "approve");
+	@Test
+	public void testApproveDeveloperAppKey() {
+
+		getPublicApi().editDeveloperAppKey(developer, appName, apiKey, "approve");
 	}
 }

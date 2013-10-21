@@ -1,32 +1,20 @@
 package com.apigee.proxy.publicapi;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
-import com.util.ApiGeeUtil;
+import org.testng.annotations.Test;
 
-public class DeployApiRevision {
+import com.util.ApigeePublicApiTest;
 
-	public static void main(String[] args) {
+public class DeployApiRevision extends ApigeePublicApiTest {
 
-		final String organization = Org.MGIORDA;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
+	private final String apiName = "agero-resource-product";
+	private final int revision = 6;
+	private final String environment = "prod";
 
-		final String apiName = "agero-resource-product";
-		final int revision = 6;
-		final String environment = "test";
+	@Test
+	public void testDeployApiRevision() {
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		String deploymentResult1 = publicApi.deployApiProxyRevision(apiName, revision, "deploy", environment);
+		String deploymentResult1 = getPublicApi().deployApiProxyRevision(apiName, revision, "deploy", environment);
 
 		System.out.println(deploymentResult1);
-
-		// String deploymentResult = publicApi.deployApiProxyRevision(apiName,
-		// 5, "deploy", environment);
-		//
-		// System.out.println(deploymentResult);
-
 	}
 }

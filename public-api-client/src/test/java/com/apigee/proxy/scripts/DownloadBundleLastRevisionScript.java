@@ -2,22 +2,20 @@ package com.apigee.proxy.scripts;
 
 import java.io.InputStream;
 
-import com.apigee.ApigeeAPI;
+import org.testng.annotations.Test;
+
 import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 import com.util.FileUtils;
 
-public class DownloadBundleLastRevisionScript {
+public class DownloadBundleLastRevisionScript extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String apiName = "loginapi";
 
-		final String organization = "cvs";
-		final String username = "mgiorda@apigee.com";
-		final String password = "1234321Nomejodas";
-		final String apiName = "loginapi";
+	@Test
+	public void testDownloadBundleLastRevisionScript() {
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		InputStream bundle = publicApi.getApiBundle(apiName, 2, ApiGeeUtil.BUNDLE_FORMAT);
+		InputStream bundle = getPublicApi().getApiBundle(apiName, 2, ApiGeeUtil.BUNDLE_FORMAT);
 
 		FileUtils.streamToFile(bundle, apiName + ".zip");
 

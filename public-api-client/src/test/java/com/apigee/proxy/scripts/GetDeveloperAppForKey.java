@@ -2,35 +2,30 @@ package com.apigee.proxy.scripts;
 
 import java.util.List;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
+import org.testng.annotations.Test;
+
 import com.apigee.model.Credential;
 import com.apigee.model.DeveloperApp;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetDeveloperAppForKey {
+public class GetDeveloperAppForKey extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String apiKey = "";
 
-		final String organization = Org.INFOGROUP;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Nomejodas";
-		final String apiKey = "HDMadGLRwPYSAuce7sp5slGGGzK3hOCR";
+	@Test
+	public void testGetDeveloperAppForKey() {
 
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
-
-		String appName = getAppNameForApiKey(publicApi, apiKey);
+		String appName = getAppNameForApiKey(apiKey);
 
 		System.out.println(appName);
 	}
 
-	private static String getAppNameForApiKey(ApigeeAPI publicApi, String apiKey) {
+	private String getAppNameForApiKey(String apiKey) {
 
-		List<String> apps = publicApi.getApps();
+		List<String> apps = getPublicApi().getApps();
 
 		for (String appName : apps) {
-			DeveloperApp app = publicApi.getApp(appName);
+			DeveloperApp app = getPublicApi().getApp(appName);
 			List<Credential> credentials = app.getCredentials();
 			for (Credential credential : credentials) {
 				if (credential.getConsumerKey().equals(apiKey)) {

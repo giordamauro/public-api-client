@@ -3,27 +3,23 @@ package com.apigee.proxy.scripts;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.apigee.ApigeeAPI;
+import org.testng.annotations.Test;
+
 import com.apigee.model.ApiProduct;
 import com.apigee.model.Attribute;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetProdApiProducts {
+public class GetProdApiProducts extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
-
-		final String organization = "mgiorda";
-		final String username = "mgiorda@apigee.com";
-		final String password = "1234321Nomejodas";
-
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
+	@Test
+	public void testGetProdApiProducts() {
 
 		List<String> apiProductsProd = new ArrayList<String>();
 
-		List<String> apiProducts = publicApi.getApiProducts();
+		List<String> apiProducts = getPublicApi().getApiProducts();
 
 		for (String apiProduct : apiProducts) {
-			ApiProduct apiProd = publicApi.getApiProduct(apiProduct);
+			ApiProduct apiProd = getPublicApi().getApiProduct(apiProduct);
 			List<Attribute> attributes = apiProd.getAttributes();
 			for (Attribute att : attributes) {
 				if (att.getName().equals("apisDeployedIn") && att.getValue().equals("prod")) {

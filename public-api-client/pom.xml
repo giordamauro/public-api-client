@@ -1,18 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>apigee-dev-tools</groupId>
-  <artifactId>public-api-client</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>apigee-dev-tools</groupId>
+	<artifactId>public-api-client</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
 		<http-client-tool.version>0.0.1-SNAPSHOT</http-client-tool.version>
-  
+
 		<httpclient.version>4.1.1</httpclient.version>
 		<gson.version>2.2.4</gson.version>
 		<json-path.version>0.8.1</json-path.version>
 		<log4j.version>1.2.17</log4j.version>
 		<ws.rs.version>1.1.1</ws.rs.version>
 		<jdom.version>1.1</jdom.version>
+
+		<spring.version>3.2.4.RELEASE</spring.version>
+		<testng.version>6.3.1</testng.version>
 
 		<maven.compiler.version>2.3.2</maven.compiler.version>
 
@@ -21,10 +25,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>apigee-dev-tools</groupId>
-	 		<artifactId>http-client-tool</artifactId>
-	 		<version>${http-client-tool.version}</version>
+			<artifactId>http-client-tool</artifactId>
+			<version>${http-client-tool.version}</version>
 		</dependency>
-	
+
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -56,6 +60,36 @@
 			<version>${jdom.version}</version>
 		</dependency>
 
+		<!-- Test dependencies: -->
+
+		<!-- Spring 3 dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- End Spring 3 dependencies -->
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -71,5 +105,5 @@
 			</plugin>
 		</plugins>
 	</build>
-  
+
 </project>
