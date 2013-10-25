@@ -1,7 +1,11 @@
 package com.util;
 
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import com.apigee.ApigeeAPI;
 import com.http.impl.httpclient.BasicAuthHttpFactory;
+import com.http.impl.httpclient.HttpRequester;
 import com.http.model.HttpFactory;
 import com.http.proxy.ApiMetadataHandler;
 import com.http.proxy.ApiMethodHandler;
@@ -24,7 +28,10 @@ public final class ApiGeeUtil {
 
 	public static ApigeeAPI getPublicApi(String organization, String username, String password) {
 
-		HttpFactory httpFactory = new BasicAuthHttpFactory(PublicApiPaths.API_GEE_HOST, username, password);
+		HttpClient defaultHttpClient = new DefaultHttpClient();
+		HttpRequester requester = new HttpRequester(defaultHttpClient);
+
+		HttpFactory httpFactory = new BasicAuthHttpFactory(requester, PublicApiPaths.API_GEE_HOST, username, password);
 		httpFactory.setPathParam("organization", organization);
 
 		ApiMethodHandler apiHandler = new ApiMethodHandlerImpl(metadataHandler, httpFactory, resultHandler);

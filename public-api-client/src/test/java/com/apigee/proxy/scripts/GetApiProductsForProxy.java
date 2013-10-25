@@ -3,29 +3,24 @@ package com.apigee.proxy.scripts;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.apigee.ApigeeAPI;
-import com.apigee.Dev;
-import com.apigee.Org;
+import org.testng.annotations.Test;
+
 import com.apigee.model.ApiProduct;
-import com.util.ApiGeeUtil;
+import com.util.ApigeePublicApiTest;
 
-public class GetApiProductsForProxy {
+public class GetApiProductsForProxy extends ApigeePublicApiTest {
 
-	public static void main(String[] args) {
+	private final String proxyName = "Member";
 
-		final String organization = Org.LIVE_NATION;
-		final String username = Dev.MGIORDA_APIGEE;
-		final String password = "1234321Apigee";
-		final String proxyName = "Member";
-
-		ApigeeAPI publicApi = ApiGeeUtil.getPublicApi(organization, username, password);
+	@Test
+	public void testGetApiProductsForProxy() {
 
 		List<String> products = new ArrayList<String>();
 
-		List<String> apiProducts = publicApi.getApiProducts();
+		List<String> apiProducts = getConfigurationManagamentAPI().getApiProducts();
 
 		for (String apiProduct : apiProducts) {
-			ApiProduct apiProductInfo = publicApi.getApiProduct(apiProduct);
+			ApiProduct apiProductInfo = getConfigurationManagamentAPI().getApiProduct(apiProduct);
 			List<String> proxies = apiProductInfo.getProxies();
 			for (String proxy : proxies) {
 				if (proxy.equalsIgnoreCase(proxyName)) {

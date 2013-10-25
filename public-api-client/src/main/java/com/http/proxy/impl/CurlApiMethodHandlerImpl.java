@@ -1,7 +1,6 @@
 package com.http.proxy.impl;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.util.Map;
 
 import org.apache.commons.logging.Log;
@@ -12,16 +11,14 @@ import com.http.model.FormRequest;
 import com.http.model.HttpFactory;
 import com.http.model.HttpMethod;
 import com.http.model.HttpRequest;
-import com.http.model.HttpResponse;
 import com.http.model.QueryRequest;
 import com.http.model.RawPayload;
 import com.http.model.RequestParams;
 import com.http.proxy.ApiMetadataHandler;
 import com.http.proxy.ApiMethodHandler;
-import com.http.proxy.ApiResultHandler;
 import com.http.proxy.BaseServiceMetadata;
 
-public class ApiMethodHandlerImpl implements ApiMethodHandler {
+public class CurlApiMethodHandlerImpl implements ApiMethodHandler {
 
 	private Log logger = LogFactory.getLog(getClass());
 
@@ -29,16 +26,13 @@ public class ApiMethodHandlerImpl implements ApiMethodHandler {
 
 	private final HttpFactory requestFactory;
 
-	private final ApiResultHandler resultHandler;
+	public CurlApiMethodHandlerImpl(ApiMetadataHandler metadataHandler, HttpFactory requestFactory) {
 
-	public ApiMethodHandlerImpl(ApiMetadataHandler metadataHandler, HttpFactory requestFactory, ApiResultHandler errorHandler) {
+		if (metadataHandler == null || requestFactory == null) {
 
-		if (metadataHandler == null || requestFactory == null || errorHandler == null) {
-
-			throw new IllegalArgumentException("MetadataHandler, requestFactory and resultHandler cannot be null");
+			throw new IllegalArgumentException("MetadataHandler and requestFactory cannot be null");
 		}
 		this.metadataHandler = metadataHandler;
-		this.resultHandler = errorHandler;
 		this.requestFactory = requestFactory;
 	}
 
@@ -53,8 +47,6 @@ public class ApiMethodHandlerImpl implements ApiMethodHandler {
 
 			HttpRequest request = requestFactory.newRequest(metadata.getMethod(), metadata.getUrl());
 			request.setPathParams(pathParams);
-
-			HttpResponse response = null;
 
 			if (metadata.getMethod() != HttpMethod.OPTIONS) {
 				RequestParams queryParams = metadataHandler.getQueryParams(method, args);
@@ -80,12 +72,9 @@ public class ApiMethodHandlerImpl implements ApiMethodHandler {
 				}
 			}
 
-			response = request.send();
+			request.send();
 
-			String produces = metadata.getProduces();
-			Type returnType = metadata.getResultType();
-
-			return resultHandler.getResponseResult(response, produces, returnType);
+			return null;
 		} else {
 			return method.invoke(this, args);
 		}

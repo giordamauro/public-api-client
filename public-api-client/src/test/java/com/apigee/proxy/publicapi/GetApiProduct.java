@@ -11,6 +11,6 @@ public class GetApiProduct extends ApigeePublicApiTest {
 	@Test
 	public void testGetApiProduct() {
 
-		getPublicApi().getApiProduct(apiProductName);
+		getConfigurationManagamentAPI().getApiProduct(apiProductName);
 	}
 }

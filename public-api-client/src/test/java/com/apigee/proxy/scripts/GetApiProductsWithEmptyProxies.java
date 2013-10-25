@@ -15,10 +15,10 @@ public class GetApiProductsWithEmptyProxies extends ApigeePublicApiTest {
 
 		List<String> products = new ArrayList<String>();
 
-		List<String> apiProducts = getPublicApi().getApiProducts();
+		List<String> apiProducts = getConfigurationManagamentAPI().getApiProducts();
 
 		for (String apiProduct : apiProducts) {
-			ApiProduct apiProductInfo = getPublicApi().getApiProduct(apiProduct);
+			ApiProduct apiProductInfo = getConfigurationManagamentAPI().getApiProduct(apiProduct);
 			List<String> proxies = apiProductInfo.getProxies();
 			if (proxies.size() == 0) {
 				products.add(apiProduct);

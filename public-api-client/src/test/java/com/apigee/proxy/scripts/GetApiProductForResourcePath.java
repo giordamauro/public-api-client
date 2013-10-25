@@ -20,10 +20,10 @@ public class GetApiProductForResourcePath extends ApigeePublicApiTest {
 
 		Map<String, List<String>> apiProductsResult = new HashMap<String, List<String>>();
 
-		List<String> apiProducts = getPublicApi().getApiProducts();
+		List<String> apiProducts = getConfigurationManagamentAPI().getApiProducts();
 
 		for (String apiProduct : apiProducts) {
-			ApiProduct apiProductInfo = getPublicApi().getApiProduct(apiProduct);
+			ApiProduct apiProductInfo = getConfigurationManagamentAPI().getApiProduct(apiProduct);
 			List<String> resources = apiProductInfo.getApiResources();
 			for (String resource : resources) {
 				for (String resourcePath : resourcePaths) {

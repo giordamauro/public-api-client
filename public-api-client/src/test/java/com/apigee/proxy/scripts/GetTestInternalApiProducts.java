@@ -9,7 +9,7 @@ import com.apigee.model.ApiProduct;
 import com.apigee.model.Attribute;
 import com.util.ApigeePublicApiTest;
 
-public class GetProdApiProducts extends ApigeePublicApiTest {
+public class GetTestInternalApiProducts extends ApigeePublicApiTest {
 
 	@Test
 	public void testGetProdApiProducts() {
@@ -20,13 +20,14 @@ public class GetProdApiProducts extends ApigeePublicApiTest {
 
 		for (String apiProduct : apiProducts) {
 			ApiProduct apiProd = getConfigurationManagamentAPI().getApiProduct(apiProduct);
-			List<Attribute> attributes = apiProd.getAttributes();
-			for (Attribute att : attributes) {
-				if (att.getName().equals("apisDeployedIn") && att.getValue().equals("prod")) {
-					apiProductsProd.add(apiProduct);
+			if (apiProd.getEnvironments().contains("test")) {
+				List<Attribute> attributes = apiProd.getAttributes();
+				for (Attribute att : attributes) {
+					if (att.getName().equals("access") && !att.getValue().equals("internal")) {
+						apiProductsProd.add(apiProduct);
+					}
 				}
 			}
-
 		}
 		System.out.println(apiProductsProd);
 

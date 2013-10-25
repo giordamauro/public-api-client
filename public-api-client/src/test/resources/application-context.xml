@@ -20,10 +20,17 @@
 
 	<context:property-placeholder location="classpath:/execution.properties" />
 
+	<bean id="defaultHttpClient" class="org.apache.http.impl.client.DefaultHttpClient"/>
+
+	<bean id="httpRequester" class="com.http.impl.httpclient.HttpRequester">
+		<constructor-arg type="org.apache.http.client.HttpClient" ref="defaultHttpClient" />
+	</bean>
+
 	<bean id="httpFactory" class="com.http.impl.httpclient.BasicAuthHttpFactory">
-		<constructor-arg index="0" value="${public-api.host}" />
-		<constructor-arg index="1" value="${admin.username}" />
-		<constructor-arg index="2" value="${admin.password}" />
+		<constructor-arg type="com.http.impl.httpclient.HttpRequester" ref="httpRequester" />
+		<constructor-arg index="1" value="${public-api.host}" />
+		<constructor-arg index="2" value="${admin.username}" />
+		<constructor-arg index="3" value="${admin.password}" />
 	</bean>
 
 	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
@@ -54,9 +61,57 @@
 			ref="apiMethodHandler" />
 	</bean>
 
-	<bean id="ApigeeApiFactoryBean" class="com.util.ProxyFactoryBean">
+	<bean id="apigeeApiFactoryBean" class="com.util.ProxyFactoryBean">
       <constructor-arg type="com.http.proxy.ApiProxyFactory" ref="apiProxyFactory"/>
     	<constructor-arg type="java.lang.Class" value="com.apigee.ApigeeAPI"/>
     </bean>
+    
+    <bean id="configurationManagementApiFactoryBean" class="com.util.ProxyFactoryBean">
+      <constructor-arg type="com.http.proxy.ApiProxyFactory" ref="apiProxyFactory"/>
+    	<constructor-arg type="java.lang.Class" value="com.apigee.ConfigurationManagementAPI"/>
+    </bean>
 
+<!-- Alternative Curl configuration -->
+	
+	<bean id="curlRequester" class="com.http.impl.httpclient.CurlHttpRequester"/>
+
+	<bean id="curlHttpFactory" class="com.http.impl.httpclient.BasicAuthHttpFactory">
+		<constructor-arg type="com.http.impl.httpclient.HttpRequester" ref="curlRequester" />
+		<constructor-arg index="1" value="${public-api.host}" />
+		<constructor-arg index="2" value="${admin.username}" />
+		<constructor-arg index="3" value="${admin.password}" />
+	</bean>
+
+	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetObject" ref="curlHttpFactory" />
+		<property name="targetMethod" value="setPathParam" />
+		<property name="arguments">
+			<list>
+				<value>organization</value>
+				<value>${organization.name}</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="curlApiMethodHandler" class="com.http.proxy.impl.CurlApiMethodHandlerImpl">
+		<constructor-arg type="com.http.proxy.ApiMetadataHandler"
+			ref="metadataHandler" />
+		<constructor-arg type="com.http.model.HttpFactory"
+			ref="curlHttpFactory" />
+	</bean>
+
+	<bean id="curlApiProxyFactory" class="com.http.proxy.ApiProxyFactory">
+		<constructor-arg type="com.http.proxy.ApiMethodHandler"
+			ref="curlApiMethodHandler" />
+	</bean>
+	
+	<bean id="curlApigeeApiFactoryBean" class="com.util.ProxyFactoryBean">
+      <constructor-arg type="com.http.proxy.ApiProxyFactory" ref="curlApiProxyFactory"/>
+    	<constructor-arg type="java.lang.Class" value="com.apigee.ApigeeAPI"/>
+    </bean>
+    
+    <bean id="curlConfigurationManagementApiFactoryBean" class="com.util.ProxyFactoryBean">
+      <constructor-arg type="com.http.proxy.ApiProxyFactory" ref="curlApiProxyFactory"/>
+    	<constructor-arg type="java.lang.Class" value="com.apigee.ConfigurationManagementAPI"/>
+    </bean>
 </beans>

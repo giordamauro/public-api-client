@@ -15,10 +15,10 @@ public class GetApiProductsWithEmptyEnvironments extends ApigeePublicApiTest {
 
 		List<String> products = new ArrayList<String>();
 
-		List<String> apiProducts = getPublicApi().getApiProducts();
+		List<String> apiProducts = getConfigurationManagamentAPI().getApiProducts();
 
 		for (String apiProduct : apiProducts) {
-			ApiProduct apiProductInfo = getPublicApi().getApiProduct(apiProduct);
+			ApiProduct apiProductInfo = getConfigurationManagamentAPI().getApiProduct(apiProduct);
 			List<String> environments = apiProductInfo.getEnvironments();
 			if (environments.size() == 0) {
 				products.add(apiProduct);

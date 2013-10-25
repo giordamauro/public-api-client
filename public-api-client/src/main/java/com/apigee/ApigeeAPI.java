@@ -3,9 +3,7 @@ package com.apigee;
 import java.io.InputStream;
 import java.util.List;
 
-import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -15,7 +13,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.apigee.model.AccessToken;
-import com.apigee.model.ApiProduct;
 import com.apigee.model.ApiProxy;
 import com.apigee.model.ApiRevision;
 import com.apigee.model.Credential;
@@ -34,16 +31,6 @@ public interface ApigeeAPI {
 	@Path("/apps/{appId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	DeveloperApp getApp(@PathParam("appId") String name);
-
-	@GET
-	@Path("/apiproducts")
-	@Produces(MediaType.APPLICATION_JSON)
-	List<String> getApiProducts();
-
-	@GET
-	@Path("/apiproducts/{apiproduct}")
-	@Produces(MediaType.APPLICATION_JSON)
-	ApiProduct getApiProduct(@PathParam("apiproduct") String name);
 
 	@GET
 	@Path("/developers")
@@ -105,13 +92,6 @@ public interface ApigeeAPI {
 	@Path("/oauth2/accesstokens/{access_token}")
 	@Produces(MediaType.APPLICATION_JSON)
 	AccessToken getAccessToken(@PathParam("access_token") String accessToken);
-
-	// TODO NOT done yet -> test
-	@POST
-	@Path("/apis")
-	@Consumes(MediaType.APPLICATION_OCTET_STREAM)
-	@Produces(MediaType.APPLICATION_JSON)
-	String importApiProxy(@QueryParam("action") String action, @QueryParam("name") String proxyName, @FormParam("payload") InputStream proxyZip);
 
 	@DELETE
 	@Path("/environments/{environment}/apis/{api}/revisions/{revision}/deployments")

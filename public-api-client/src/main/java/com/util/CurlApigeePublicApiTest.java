@@ -9,14 +9,14 @@ import com.apigee.ApigeeAPI;
 import com.apigee.ConfigurationManagementAPI;
 
 @ContextConfiguration("classpath:/application-context.xml")
-public class ApigeePublicApiTest extends AbstractTestNGSpringContextTests {
+public class CurlApigeePublicApiTest extends AbstractTestNGSpringContextTests {
 
 	@Autowired
-	@Qualifier("apigeeApiFactoryBean")
+	@Qualifier("curlApigeeApiFactoryBean")
 	private ApigeeAPI publicApi;
 
 	@Autowired
-	@Qualifier("configurationManagementApiFactoryBean")
+	@Qualifier("curlConfigurationManagementApiFactoryBean")
 	private ConfigurationManagementAPI configurationManagamentAPI;
 
 	protected ApigeeAPI getPublicApi() {

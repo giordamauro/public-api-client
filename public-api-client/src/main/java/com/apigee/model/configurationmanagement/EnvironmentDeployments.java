@@ -1,0 +1,36 @@
+package com.apigee.model.configurationmanagement;
+
+import java.util.List;
+
+public class EnvironmentDeployments {
+
+	private List<ApiProxyDeployment> aPIProxy;
+
+	private String name;
+
+	private String organization;
+
+	public List<ApiProxyDeployment> getaPIProxy() {
+		return aPIProxy;
+	}
+
+	public void setaPIProxy(List<ApiProxyDeployment> aPIProxy) {
+		this.aPIProxy = aPIProxy;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getOrganization() {
+		return organization;
+	}
+
+	public void setOrganization(String organization) {
+		this.organization = organization;
+	}
+}
