@@ -24,7 +24,7 @@ public class ApiResultHandlerImpl implements ApiResultHandler {
 	public ApiResultHandlerImpl() {
 	}
 
-	public Object getResponseResult(HttpResponse response, String produces, Type returnType) throws Exception {
+	public Object getResponseResult(HttpResponse response, String produces, Type returnType) {
 
 		if (response == null || produces == null || returnType == null) {
 			throw new IllegalArgumentException("Response, produces and returnType cannot be null");

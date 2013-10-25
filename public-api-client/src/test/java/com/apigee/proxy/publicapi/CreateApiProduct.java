@@ -14,7 +14,7 @@ public class CreateApiProduct extends ApigeePublicApiTest {
 
 		ApiProduct apiProduct = getConfigurationManagamentAPI().getApiProduct(apiProductName);
 
-		apiProduct.setName(apiProductName + "6");
+		apiProduct.setName(apiProductName + "7");
 
 		getConfigurationManagamentAPI().createApiProduct(apiProduct);
 	}

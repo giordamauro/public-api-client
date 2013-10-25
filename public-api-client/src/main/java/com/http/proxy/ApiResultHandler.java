@@ -6,5 +6,5 @@ import com.http.model.HttpResponse;
 
 public interface ApiResultHandler {
 
-	Object getResponseResult(HttpResponse response, String produces, Type returnType) throws Exception;
+	Object getResponseResult(HttpResponse response, String produces, Type returnType);
 }
